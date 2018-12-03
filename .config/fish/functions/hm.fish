@@ -1,0 +1,3 @@
+function hm
+    cd ~
+end
