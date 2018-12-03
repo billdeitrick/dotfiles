@@ -1,5 +1,7 @@
 {
     "terminal.external.osxExec": "Hyper.app",
     "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "git.autofetch": true
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true
 }
