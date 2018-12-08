@@ -34,6 +34,9 @@ brew autoupdate --start --upgrade --cleanup --enable-notifications
 
 echo "######### Manage App Store Apps with MAS #########"
 
+# Install mas to automate App Store downloads
+brew install mas
+
 # Remove GarageBand if it's installed...get that space back
 if mas list | grep 682658836 > /dev/null; then
   echo "@#@# Bill: Removing GarageBand."
@@ -52,9 +55,6 @@ if mas list | grep 408981434 > /dev/null; then
 else
   echo "@#@# Bill: No iMovie found. Yippee!"
 fi
-
-# Install mas to automate App Store downloads
-brew install mas
 
 # Install desired apps from app store
 mas install 409183694 # Keynote
