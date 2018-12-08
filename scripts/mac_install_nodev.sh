@@ -76,3 +76,4 @@ brew cask install cryptomator
 brew cask install google-backup-and-sync
 brew cask install gnucash
 brew cask install keepassx
+brew cask install google-chrome
