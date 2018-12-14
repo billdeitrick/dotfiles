@@ -28,6 +28,8 @@ for funcfile in ~/Documents/dev/dotfiles/.config/fish/functions/*
 end
 
 # vscode
+
+## Symlink all dotfiles in VSCode folder
 for filesrc in ~/Documents/dev/dotfiles/VSCode/*
     switch (uname)
         case Darwin
@@ -44,3 +46,9 @@ for filesrc in ~/Documents/dev/dotfiles/VSCode/*
     ln -s $filesrc $filedst
 
 end
+
+# git
+
+## .gitconfig
+rm ~/.gitconfig
+ln -s ~/Documents/dev/dotfiles/.gitconfig ~/.gitconfig
