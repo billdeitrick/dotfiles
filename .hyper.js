@@ -21,7 +21,7 @@ module.exports = {
     fontWeightBold: 'bold',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'rgb(200,30,120)',
 
     // terminal text color under BLOCK cursor
     cursorAccentColor: '#000',
@@ -33,20 +33,45 @@ module.exports = {
     cursorBlink: true,
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#b2b2b2',
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: '#000',
+    backgroundColor: '#212026',
 
     // terminal selection color
     selectionColor: 'rgba(248,28,229,0.3)',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: 'transparent',
 
     // custom CSS to embed in the main window
-    css: '',
+    css: `
+      .hyperterm_main {
+        border: none !important;
+      }
+      .tab_tab {
+        border: 0;
+        opacity: 0.5;
+      }
+      .tab_active {
+        opacity: 1;
+      }
+      .tab_textActive {
+        opacity: 1;
+        border-bottom: 1px solid #a31db1;
+      }
+      .splitpane_divider {
+        background-color: #555f69 !important;
+      }
+      .splitpane_pane > .term_fit {
+        opacity: 0.666;
+        transition: 0.15s ease-in-out;
+      }
+      .splitpane_pane > .term_fit.term_active {
+        opacity: 1;
+      }
+    `,
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -67,22 +92,22 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#000000',
-      red: '#C51E14',
-      green: '#1DC121',
-      yellow: '#C7C329',
-      blue: '#0A2FC4',
-      magenta: '#C839C5',
-      cyan: '#20C5C6',
-      white: '#C7C7C7',
-      lightBlack: '#686868',
-      lightRed: '#FD6F6B',
-      lightGreen: '#67F86F',
-      lightYellow: '#FFFA72',
-      lightBlue: '#6A76FB',
-      lightMagenta: '#FD7CFC',
-      lightCyan: '#68FDFE',
-      lightWhite: '#FFFFFF',
+      black: '#1f2022',
+      red: '#ce537a',
+      green: '#00bc81',
+      yellow: '#b1951d',
+      blue: '#005bbf',
+      magenta: '#a31db1',
+      cyan: '#2aa1ae',
+      white: '#d3d3d3',
+      lightBlack: '#555f69',
+      lightRed: '#df005f',
+      lightGreen: '#3ac095',
+      lightYellow: '#875f00',
+      lightBlue: '#3e7ec1',
+      lightMagenta: '#af00df',
+      lightCyan: '#34c8d9',
+      lightWhite: '#efefef'
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -110,10 +135,10 @@ module.exports = {
     bell: 'SOUND',
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
-    copyOnSelect: false,
+    copyOnSelect: true,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
-    defaultSSHApp: true,
+    defaultSSHApp: false,
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
@@ -131,7 +156,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-space"],
+  plugins: [],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
