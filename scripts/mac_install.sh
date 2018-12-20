@@ -171,6 +171,6 @@ pyenv install $PYTHON_LATEST # Python 3 Latest
 pyenv global $PYTHON_LATEST
 
 # Since pyenv shims won't actually be default yet, we'll call them explicitly to use latest python and get Pipenv
-~/.pyenv/shims pip install -U pipenv
+~/.pyenv/shims/pip install -U pipenv
 
 # Done with Python...pipenv handles all other magic
