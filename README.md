@@ -31,6 +31,14 @@ The goal is to automate as much app and dev toolchain setup as possible. Here's 
 .\scipts\symlink.ps1
 ```
 
+#### WSL
+
+```bash
+/bin/bash scripts/wsl_install.sh
+/usr/bin/fish scripts/symlink.fish
+/usr/bin/fish scripts/fish-bootstrap.fish
+```
+
 ### Symlinking (for all Operating Systems)
 
 When adding new managed dotfiles, run the symlink script to pick them up automatically (if they are managed by this script) or add them to the symlink script so they will be managed automatically.

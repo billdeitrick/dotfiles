@@ -3,7 +3,7 @@
 # to run as admin.
 
 # Get the current user profile path; this will be expanded when we pass off to an elevated shell below.
-$USERPROFILE = (Get-Item Env:USERPROFILE).value
+$USERPROFILE = $env:USERPROFILE
 
 Start-Process powershell.exe -Verb Runas -ArgumentList "-Command & {
     # Hyper
