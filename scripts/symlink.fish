@@ -34,16 +34,17 @@ for filesrc in ~/Documents/dev/dotfiles/VSCode/*
     switch (uname)
         case Darwin
             set filedst (echo ~/Library/Application\ Support/Code/User/(echo $filesrc | tr '/' '\n' | tail -1))
+
+            if test -e $filedst
+                rm $filedst
+            end
+
+            ln -s $filesrc $filedst
+
         case '*'
-            echo "Unrecognized OS! Can't setup VSCode symlinks"
+            echo "No VSCode symlinks for this os."
             break
     end
-
-    if test -e $filedst
-        rm $filedst
-    end
-
-    ln -s $filesrc $filedst
 
 end
 
