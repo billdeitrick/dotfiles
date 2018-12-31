@@ -63,6 +63,7 @@ mas install 409203825 # Numbers
 mas install 803453959 # Slack
 mas install 1295203466 # MS Remote Desktop 10
 mas install 784801555 # MS OneNote
+mas install 1333542190 # 1Password 7
 
 ################################################################
 # Manage Homebrew GUI Apps                                     #
@@ -126,6 +127,7 @@ brew install git
 brew install openssh
 brew install rsync
 brew install unzip
+brew install nmap
 
 ################################################################
 # Fish!                                                        #
