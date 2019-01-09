@@ -128,6 +128,7 @@ brew install openssh
 brew install rsync
 brew install unzip
 brew install nmap
+brew install vim
 
 ################################################################
 # Fish!                                                        #
@@ -176,3 +177,12 @@ pyenv global $PYTHON_LATEST
 ~/.pyenv/shims/pip install -U pipenv
 
 # Done with Python...pipenv handles all other magic
+
+################################################################
+# Change system settings				       #
+################################################################
+
+echo "######### Change system settings #########"
+
+# Set ApplePressAndHoldEnabled to false for Hyper; otherwise press and hold doesn't work
+defaults write co.zeit.hyper ApplePressAndHoldEnabled -bool false
