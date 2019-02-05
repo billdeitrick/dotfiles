@@ -1,11 +1,5 @@
 #! /usr/local/bin/fish
 
-# Hyper
-
-## .hyper.js
-rm ~/.hyper.js
-ln -s ~/Documents/dev/dotfiles/.hyper.js ~/.hyper.js
-
 # Fish
 
 ## Fish config and functions 
@@ -53,3 +47,7 @@ end
 ## .gitconfig
 rm ~/.gitconfig
 ln -s ~/Documents/dev/dotfiles/.gitconfig ~/.gitconfig
+
+## .gitignore
+rm ~/.gitignore
+ln -s ~/Documents/dev/dotfiles/.gitignore ~/.gitignore
