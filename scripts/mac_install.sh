@@ -81,11 +81,13 @@ brew cask install keepassx
 brew cask install airtool
 brew cask install gimp
 brew cask install wireshark
-brew cask install hyper
 brew cask install xquartz # Required for Inkscape
 brew cask install inkscape # Requires xquartz
 brew cask install virtualbox # Will need to approve kernel extensions
 brew cask install vagrant
+brew cask install typora
+brew cask install google-chrome
+brew cask install iterm2
 
 ################################################################
 # Install vscode extensions                                    #
@@ -99,6 +101,7 @@ echo "######### Install vscode extensions #########"
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension esbenp.prettier-vscode
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension mohsen1.prettify-json
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-python.python
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension rebornix.ruby
 
 ################################################################
 # Install CLI tools                                            #
@@ -129,6 +132,7 @@ brew install rsync
 brew install unzip
 brew install nmap
 brew install vim
+brew install gpg
 
 ################################################################
 # Fish!                                                        #
@@ -179,10 +183,26 @@ pyenv global $PYTHON_LATEST
 # Done with Python...pipenv handles all other magic
 
 ################################################################
-# Change system settings				       #
+# Ruby dev stuff                                               #
+################################################################
+
+echo "######### Install Ruby Dev Stuff #########" 
+
+brew install rbenv
+
+# Set a var with the latest stable Ruby version available from rbenv
+RUBY_LATEST=$(rbenv install --list | grep '^\s\+[0-9]\.[0-9]\.[0-9]$' | tail -1)
+
+# Get the latest stable Ruby version from rbenv
+rbenv install $RUBY_LATEST
+
+# Tell rbenv what our default Ruby will be
+rbenv global $RUBY_LATEST
+
+################################################################
+# Change system settings                                       #
 ################################################################
 
 echo "######### Change system settings #########"
 
-# Set ApplePressAndHoldEnabled to false for Hyper; otherwise press and hold doesn't work
-defaults write co.zeit.hyper ApplePressAndHoldEnabled -bool false
+# Not changing any system settings at the moment
