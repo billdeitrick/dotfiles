@@ -190,6 +190,9 @@ echo "######### Install Ruby Dev Stuff #########"
 
 brew install rbenv
 
+# Heroku; apparently this can't be installed via brew anymore
+curl https://cli-assets.heroku.com/install.sh | sh
+
 # Set a var with the latest stable Ruby version available from rbenv
 RUBY_LATEST=$(rbenv install --list | grep '^\s\+[0-9]\.[0-9]\.[0-9]$' | tail -1)
 
