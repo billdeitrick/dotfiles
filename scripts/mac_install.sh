@@ -203,6 +203,23 @@ rbenv install $RUBY_LATEST
 rbenv global $RUBY_LATEST
 
 ################################################################
+# Node stuff                                                   #
+################################################################
+
+echo "######### Install Node Stuff #########" 
+
+# NVM install...not officially "supported" via brew
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+
+# This allows us to start using NVM immediately in the current session
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Next, we'll install the current LTS version of node
+# See NVM readme for details
+nvm install 'lts/*'
+
+################################################################
 # Change system settings                                       #
 ################################################################
 
