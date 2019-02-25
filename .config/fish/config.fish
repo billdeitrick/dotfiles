@@ -25,7 +25,10 @@ switch (uname)
         status --is-interactive; and source (pyenv init -|psub)
 
         # Setup rbenv for Linux
-        #status --is-interactive; and source (rbenv init -|psub)
+        set -gx RBENV_ROOT "$HOME/.rbenv"
+        set -gx PATH "$RBENV_ROOT/bin:$PATH"
+
+        status --is-interactive; and source (rbenv init -|psub)
 
     case '*'
         echo "MY FISH DOESN'T KNOW THESE WATERS!"
