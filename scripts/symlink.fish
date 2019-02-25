@@ -34,7 +34,14 @@ for filesrc in ~/Documents/dev/dotfiles/VSCode/*
             end
 
             ln -s $filesrc $filedst
+        case Linux
+            set filedst (echo ~/.config/Code/User/(echo $filesrc | tr '/' '\n' | tail -1))
 
+            if test -e $filedst
+                rm $filedst
+            end
+
+            ln -s $filesrc $filedst
         case '*'
             echo "No VSCode symlinks for this os."
             break
