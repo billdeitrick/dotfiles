@@ -11,12 +11,21 @@ switch (uname)
         # Setup pyenv for MacOS
         status --is-interactive; and source (pyenv init -|psub)
 
-	# Setup rbenv for MacOS
-	status --is-interactive; and source (rbenv init -|psub)
+        # Setup rbenv for MacOS
+        status --is-interactive; and source (rbenv init -|psub)
 
     case Linux
-        # Set the color scheme for Bob the Fish; base16-light on Linux (WSL)
-        set -g theme_color_scheme base16-light
+        # Set the color scheme for Bob the Fish; base16 on Linux
+        set -g theme_color_scheme base16
+
+        # Setup pyenv for Linux
+        set -gx PYENV_ROOT "$HOME/.pyenv"
+        set -gx PATH "$PYENV_ROOT/bin:$PATH"
+
+        status --is-interactive; and source (pyenv init -|psub)
+
+        # Setup rbenv for Linux
+        #status --is-interactive; and source (rbenv init -|psub)
 
     case '*'
         echo "MY FISH DOESN'T KNOW THESE WATERS!"
