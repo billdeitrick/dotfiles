@@ -202,6 +202,11 @@ RUBY_LATEST=$(~/.rbenv/bin/rbenv install --list | grep '^\s\+[0-9]\.[0-9]\.[0-9]
 # Tell rbenv what our default Ruby will be
 ~/.rbenv/bin/rbenv  global $RUBY_LATEST
 
+# Install gems we'll want for dev
+~/.rbenv/shims/gem install rubocop
+~/.rbenv/shims/gem install ruby-debug-ide
+~/.rbenv/shims/gem install debase
+
 ################################################################
 # Node                                                         #
 ################################################################
