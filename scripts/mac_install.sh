@@ -133,6 +133,7 @@ brew install unzip
 brew install nmap
 brew install vim
 brew install gpg
+brew install telnet
 
 ################################################################
 # Fish!                                                        #
