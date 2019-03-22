@@ -7,5 +7,6 @@
     "editor.renderWhitespace": "all",
     "[ruby]": {
         "editor.tabSize": 2
-    }
+    },
+    "files.autoSave": "afterDelay"
 }
