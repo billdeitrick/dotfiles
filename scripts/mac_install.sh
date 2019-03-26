@@ -88,6 +88,7 @@ brew cask install vagrant
 brew cask install typora
 brew cask install google-chrome
 brew cask install iterm2
+brew cask install docker
 
 ################################################################
 # Install vscode extensions                                    #
