@@ -157,6 +157,9 @@ chsh -s /usr/local/bin/fish
 brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 
+# Get completions for Fish
+curl -Lo ~/.config/fish/completions/docker.fish https://raw.githubusercontent.com/docker/cli/master/contrib/completion/fish/docker.fish
+
 ################################################################
 # Python dev stuff basics                                      #
 ################################################################

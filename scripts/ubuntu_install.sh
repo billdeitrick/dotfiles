@@ -155,6 +155,9 @@ chsh -s /usr/bin/fish
 # Get a nerdfonts for Fish
 sudo apt-get install -y fonts-hack-ttf
 
+# Get completions for Fish
+curl -Lo ~/.config/fish/completions/docker.fish https://raw.githubusercontent.com/docker/cli/master/contrib/completion/fish/docker.fish
+
 ################################################################
 # Python                                                       #
 ################################################################
