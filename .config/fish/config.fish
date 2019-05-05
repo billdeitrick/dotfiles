@@ -30,6 +30,12 @@ switch (uname)
 
         status --is-interactive; and source (rbenv init -|psub)
 
+        # Add bindings for command completion to CTRL/ALT+G on Linux
+        # Otherwise, completion doesn't work in VSCode terminal
+        function fish_user_key_bindings
+            bind \cg forward-char
+            bind \eg forward-word
+        end
     case '*'
         echo "MY FISH DOESN'T KNOW THESE WATERS!"
 end
