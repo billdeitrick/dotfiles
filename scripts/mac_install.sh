@@ -104,6 +104,7 @@ echo "######### Install vscode extensions #########"
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-python.python
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension rebornix.ruby
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension samuelcolvin.jinjahtml
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension peterjausovec.vscode-docker
 
 ################################################################
 # Install CLI tools                                            #
@@ -155,6 +156,9 @@ chsh -s /usr/local/bin/fish
 # Get a nerdfonts for Fish
 brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
+
+# Get completions for Fish
+curl -Lo ~/.config/fish/completions/docker.fish https://raw.githubusercontent.com/docker/cli/master/contrib/completion/fish/docker.fish
 
 ################################################################
 # Python dev stuff basics                                      #

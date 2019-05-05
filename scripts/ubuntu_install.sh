@@ -113,6 +113,7 @@ code --install-extension mohsen1.prettify-json
 code --install-extension ms-python.python
 code --install-extension rebornix.ruby
 code --install-extension samuelcolvin.jinjahtml
+code --install-extension peterjausovec.vscode-docker
 
 ################################################################
 # Dev dependencies		                               #
@@ -153,6 +154,9 @@ chsh -s /usr/bin/fish
 
 # Get a nerdfonts for Fish
 sudo apt-get install -y fonts-hack-ttf
+
+# Get completions for Fish
+curl -Lo ~/.config/fish/completions/docker.fish https://raw.githubusercontent.com/docker/cli/master/contrib/completion/fish/docker.fish
 
 ################################################################
 # Python                                                       #

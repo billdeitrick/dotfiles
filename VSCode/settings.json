@@ -1,5 +1,4 @@
 {
-    "terminal.external.osxExec": "Hyper.app",
     "terminal.integrated.fontFamily": "Hack Nerd Font, Hack",
     "git.autofetch": true,
     "git.confirmSync": false,
@@ -8,5 +7,5 @@
     "[ruby]": {
         "editor.tabSize": 2
     },
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "onWindowChange"
 }
