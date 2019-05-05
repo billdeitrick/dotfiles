@@ -224,3 +224,11 @@ export NVM_DIR="$HOME/.nvm"
 # Next, we'll install the current LTS version of node
 # See NVM readme for details
 nvm install 'lts/*'
+
+################################################################
+# Node Modules                                                 #
+################################################################
+
+echo "######### Install Node Modules #########" 
+
+npm install -g serverless
