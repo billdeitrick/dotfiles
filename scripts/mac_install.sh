@@ -233,6 +233,8 @@ nvm install 'lts/*'
 echo "######### Install Node Modules #########" 
 
 npm install -g serverless
+npm install -g yo 
+npm install -g generator-serverless-policy
 
 ################################################################
 # Change system settings                                       #
