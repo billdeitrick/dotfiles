@@ -238,3 +238,4 @@ echo "######### Install Node Modules #########"
 npm install -g serverless
 npm install -g yo 
 npm install -g generator-serverless-policy
+npm install -g serverless-azure-functions
