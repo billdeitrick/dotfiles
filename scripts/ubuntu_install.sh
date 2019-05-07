@@ -134,6 +134,8 @@ sudo apt-get install -y zlib1g-dev
 sudo apt-get install -y libbz2-dev
 sudo apt-get install -y libreadline-dev
 sudo apt-get install -y libsqlite3-dev
+sudo apt-get install -y docker
+sudo apt-get install -y docker-compose
 
 ################################################################
 # Fish!                                                        #
