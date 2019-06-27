@@ -21,7 +21,8 @@ Write-Host "######### Install Dev Stuff #########"
 choco install git -y --params "/GitOnlyOnPath /NoAutoCrlf /WindowsTerminal /NoShellIntegration"
 choco install hackfont-windows -y
 choco install vscode -y --params "/NoDesktopIcon"
-choco install conemu -y --params
+choco install conemu -y
+choco install fontforge -y
 
 # Cleanup
 Remove-Item -Path 'C:\Users\Public\Desktop\ConEmu (x64).lnk' -Force
