@@ -21,5 +21,3 @@ Write-Host "######### Install Dev #########"
 choco install git -y --params "/GitOnlyOnPath /NoAutoCrlf /WindowsTerminal /NoShellIntegration"
 choco install hackfont-windows -y
 choco install vscode -y --params "/NoDesktopIcon"
-choco install hyper -y
-
