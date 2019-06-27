@@ -6,20 +6,24 @@
 $USERPROFILE = $env:USERPROFILE
 
 Start-Process powershell.exe -Verb Runas -ArgumentList "-Command & {
-    # Hyper
-    Remove-Item -Path $USERPROFILE\.hyper.js
-    New-Item -Path $USERPROFILE\.hyper.js -ItemType SymbolicLink -Value $USERPROFILE\Documents\dev\dotfiles\.hyper.js
+    # Conemu
+    Remove-Item -Path $USERPROFILE\AppData\Roaming\ConEmu.xml -Force
+    New-Item -Path $USERPROFILE\AppData\Roaming\ConEmu.xml -ItemType SymbolicLink -Value $USERPROFILE\Documents\dev\dotfiles\conemu\ConEmu.xml
 
     # VSCode
-    Remove-Item -Path $USERPROFILE\AppData\Roaming\Code\User\settings.json
+    Remove-Item -Path $USERPROFILE\AppData\Roaming\Code\User\settings.json -Force
     New-Item -Path $USERPROFILE\AppData\Roaming\Code\User\settings.json -ItemType SymbolicLink -Value $USERPROFILE\Documents\dev\dotfiles\VSCode\settings.json
     
     # Git
-    Remove-Item -Path $USERPROFILE\.gitconfig
+    Remove-Item -Path $USERPROFILE\.gitconfig -Force
     New-Item -Path $USERPROFILE\.gitconfig -ItemType SymbolicLink -Value $USERPROFILE\Documents\dev\dotfiles\.gitconfig
 
-    Remove-Item -Path $USERPROFILE\.gitignore
+    Remove-Item -Path $USERPROFILE\.gitignore -Force
     New-Item -Path $USERPROFILE\.gitignore -ItemType SymbolicLink -Value $USERPROFILE\Documents\dev\dotfiles\.gitignore
+
+    # PS Profile
+    Remove-Item -Path $USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 -Force
+    New-Item -Path $USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 -ItemType SymbolicLink -Value $USERPROFILE\Documents\dev\dotfiles\psprofile\Microsoft.PowerShell_profile.ps1
 
     # For debug
     #pause
