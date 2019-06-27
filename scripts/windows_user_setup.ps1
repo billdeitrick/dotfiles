@@ -21,6 +21,9 @@ code --install-extension knisterpeter.vscode-github
 code --install-extension esbenp.prettier-vscode
 code --install-extension mohsen1.prettify-json
 code --install-extension ms-python.python
+code --install-extension rebornix.ruby
+code --install-extension samuelcolvin.jinjahtml
+code --install-extension peterjausovec.vscode-docker
 
 # Extensions for Windows only
 code --install-extension ms-vscode.powershell
