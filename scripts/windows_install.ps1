@@ -23,6 +23,7 @@ choco install hackfont-windows -y
 choco install vscode -y --params "/NoDesktopIcon"
 choco install conemu -y
 choco install fontforge -y
+choco install docker-desktop -y
 
 # Cleanup
 Remove-Item -Path 'C:\Users\Public\Desktop\ConEmu (x64).lnk' -Force
