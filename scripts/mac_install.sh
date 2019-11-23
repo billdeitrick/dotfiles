@@ -81,8 +81,7 @@ brew cask install keepassx
 brew cask install airtool
 brew cask install gimp
 brew cask install wireshark
-brew cask install xquartz # Required for Inkscape
-brew cask install inkscape # Requires xquartz
+brew cask install inkscape
 brew cask install virtualbox # Will need to approve kernel extensions
 brew cask install vagrant
 brew cask install typora
