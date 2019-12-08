@@ -114,6 +114,7 @@ code --install-extension ms-python.python
 code --install-extension rebornix.ruby
 code --install-extension samuelcolvin.jinjahtml
 code --install-extension peterjausovec.vscode-docker
+code --install-extension eamodio.gitlens
 
 ################################################################
 # Dev dependencies		                               #

@@ -104,6 +104,7 @@ echo "######### Install vscode extensions #########"
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension rebornix.ruby
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension samuelcolvin.jinjahtml
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension peterjausovec.vscode-docker
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension eamodio.gitlens
 
 ################################################################
 # Install CLI tools                                            #
