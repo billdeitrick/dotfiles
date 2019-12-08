@@ -7,5 +7,6 @@
     "[ruby]": {
         "editor.tabSize": 2
     },
-    "files.autoSave": "off"
+    "files.autoSave": "off",
+    "explorer.confirmDelete": false
 }
