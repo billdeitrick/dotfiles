@@ -6,7 +6,7 @@
 # Modify System Path                                           #
 ################################################################
 
-[Environment]::SetEnvironmentVariable("Path", $env:Path + ";" + $env:USERPROFILE + "\Documents\dev\dotfiles\batch_aliases", [System.EnvironmentVariableTarget]::User)
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";" + $env:USERPROFILE + "\dev\dotfiles\batch_aliases", [System.EnvironmentVariableTarget]::User)
 
 ################################################################
 # Install Code Extensions                                      #

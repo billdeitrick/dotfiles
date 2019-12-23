@@ -1,5 +1,5 @@
 function dev {
-    Set-Location "$env:USERPROFILE\Documents\dev"
+    Set-Location "$env:USERPROFILE\dev"
 }
 
 function dt {
