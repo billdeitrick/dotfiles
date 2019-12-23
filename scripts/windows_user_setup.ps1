@@ -28,3 +28,4 @@ code --install-extension eamodio.gitlens
 
 # Extensions for Windows only
 code --install-extension ms-vscode.powershell
+code --install-extension ms-vscode-remote.remote-wsl
