@@ -47,7 +47,6 @@ choco install irfanview -y
 choco install jitsi -y
 choco install kdiff3 -y
 choco install keepass -y
-choco install powerbi -y
 choco install firefox -y
 choco install nmap -y
 choco install notepadplusplus -y
@@ -60,6 +59,7 @@ choco install slack -y
 choco install winscp -y
 choco install wireshark -y
 choco install xmlnotepad -y
+choco install putty -y
 
 # Cleanup
 Remove-Item -Path 'C:\Users\Public\Desktop\ConEmu (x64).lnk' -Force
@@ -97,3 +97,4 @@ Write-Host "* MirrorOp"
 Write-Host "* Sketchup"
 Write-Host "* Tamograph"
 Write-Host "* RealVNC Viewer"
+Write-Host "* PowerBI"
