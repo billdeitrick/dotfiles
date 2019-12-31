@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-06-27 15:31:31" build="190623">
+		<key name=".Vanilla" modified="2019-12-31 17:06:10" build="191012">
 			<value name="StartType" type="hex" data="00"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -241,14 +241,14 @@
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
-			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="-699"/>
-			<value name="ConWnd Y" type="long" data="-736"/>
-			<value name="LastMonitor" type="string" data="-973,-1055,707,-35"/>
-			<value name="ConWnd Width" type="dword" data="00000066"/>
-			<value name="ConWnd Height" type="dword" data="00000045"/>
+			<value name="WindowMode" type="dword" data="0000051f"/>
+			<value name="ConWnd X" type="long" data="380"/>
+			<value name="ConWnd Y" type="long" data="5"/>
+			<value name="LastMonitor" type="string" data="0,0,1920,1034"/>
+			<value name="ConWnd Width" type="dword" data="00000064"/>
+			<value name="ConWnd Height" type="dword" data="00000026"/>
 			<value name="16bit Height" type="ulong" data="0"/>
-			<key name="Tasks" modified="2018-11-14 09:39:26" build="180626">
+			<key name="Tasks" modified="2019-12-31 16:04:58" build="191012">
 				<value name="Count" type="long" data="11"/>
 				<key name="Task1" modified="2018-11-14 09:39:26" build="180626">
 					<value name="Name" type="string" data="{Shells::cmd}"/>
@@ -305,25 +305,25 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data="powershell.exe -new_console:a"/>
 				</key>
-				<key name="Task7" modified="2018-11-14 09:39:26" build="180626">
-					<value name="Name" type="string" data="{Bash::bash}"/>
+				<key name="Task7" modified="2019-12-31 17:06:31" build="191012">
+					<value name="Name" type="string" data="{Shells::Fish}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00001157"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data="wsl.exe"/>
+				</key>
+				<key name="Task8" modified="2019-12-31 16:04:58" build="191012">
+					<value name="Name" type="string" data="{Shells::Bash}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt'/>
+					<value name="Cmd1" type="string" data="bash.exe"/>
 				</key>
-				<key name="Task8" modified="2018-11-14 09:39:26" build="180626">
-					<value name="Name" type="string" data="{Bash::Git bash}"/>
-					<value name="Flags" type="dword" data="00000004"/>
-					<value name="Hotkey" type="dword" data="00000000"/>
-					<value name="GuiArgs" type="string" data=""/>
-					<value name="Active" type="long" data="0"/>
-					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='set "PATH=%ConEmuDrive%\Users\bill.deitrick\AppData\Local\Programs\Git\usr\bin;%PATH%" &amp; %ConEmuDrive%\Users\bill.deitrick\AppData\Local\Programs\Git\git-cmd.exe --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i -new_console:p'/>
-				</key>
-				<key name="Task9" modified="2018-11-14 09:47:42" build="180626">
+				<key name="Task9" modified="2019-12-31 16:04:58" build="191012">
 					<value name="Name" type="string" data="{Putty}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00125b55"/>
@@ -332,7 +332,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='"Putty.exe"'/>
 				</key>
-				<key name="Task10" modified="2018-11-14 09:39:26" build="180626">
+				<key name="Task10" modified="2019-12-31 16:04:58" build="191012">
 					<value name="Name" type="string" data="{Helper::Show ANSI colors}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -341,7 +341,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='cmd.exe /k type "%ConEmuBaseDir%\Addons\AnsiColors16t.ans" -cur_console:n'/>
 				</key>
-				<key name="Task11" modified="2018-11-14 09:39:26" build="180626">
+				<key name="Task11" modified="2019-12-31 16:04:58" build="191012">
 					<value name="Name" type="string" data="{Tools::Chocolatey (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -705,14 +705,18 @@
 				<value name="Count" type="long" data="0"/>
 			</key>
 			<value name="CmdLineHistory" type="multi">
+				<line data="{Shells::Bash}"/>
+				<line data="{Shells::Fish}"/>
+				<line data="{Fish}"/>
+				<line data="{Putty}"/>
 				<line data="{Shells::PowerShell (Admin)}"/>
 				<line data="{Shells::cmd (Admin)}"/>
-				<line data="{Putty}"/>
 				<line data="powershell.exe"/>
 			</value>
 			<value name="AnsiLogCodes" type="hex" data="00"/>
 			<value name="AutoReloadEnvironment" type="hex" data="01"/>
 			<value name="AutoTrimSingleLine" type="hex" data="00"/>
+			<value name="StatusBar.Hide.InputGrouping" type="hex" data="00"/>
 		</key>
 	</key>
 </key>
