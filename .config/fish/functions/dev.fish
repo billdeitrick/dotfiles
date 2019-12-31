@@ -1,3 +1,3 @@
 function dev
-    cd ~/Documents/dev
+    cd $DEV_FOLDER_PATH
 end

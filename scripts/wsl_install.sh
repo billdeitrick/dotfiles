@@ -115,7 +115,7 @@ curl https://cli-assets.heroku.com/install.sh | bash
 
 # Set a var with the latest stable Ruby version available from rbenv
 # Use explicit paths since we don't have rbenv on PATH yet
-RUBY_LATEST=$(~/.rbenv/bin/rbenv install --list | grep '^\s\+[0-9]\.[0-9]\.[0-9]$' | tail -1)
+RUBY_LATEST=$(~/.rbenv/bin/rbenv install --list | grep '^[0-9]\.[0-9]\.[0-9]$' | tail -1)
 
 # Get the latest stable Ruby version from rbenv
 ~/.rbenv/bin/rbenv  install $RUBY_LATEST
