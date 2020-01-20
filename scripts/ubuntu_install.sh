@@ -115,6 +115,7 @@ code --install-extension rebornix.ruby
 code --install-extension samuelcolvin.jinjahtml
 code --install-extension peterjausovec.vscode-docker
 code --install-extension eamodio.gitlens
+code --install-extension stormwarning.json-template
 
 ################################################################
 # Dev dependencies		                               #
