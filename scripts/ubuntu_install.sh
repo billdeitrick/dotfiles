@@ -113,7 +113,7 @@ code --install-extension mohsen1.prettify-json
 code --install-extension ms-python.python
 code --install-extension rebornix.ruby
 code --install-extension samuelcolvin.jinjahtml
-code --install-extension peterjausovec.vscode-docker
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension eamodio.gitlens
 code --install-extension stormwarning.json-template
 

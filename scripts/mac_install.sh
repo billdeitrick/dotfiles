@@ -103,7 +103,7 @@ echo "######### Install vscode extensions #########"
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-python.python
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension rebornix.ruby
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension samuelcolvin.jinjahtml
-/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension peterjausovec.vscode-docker
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-azuretools.vscode-docker
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension eamodio.gitlens
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension stormwarning.json-template
 
