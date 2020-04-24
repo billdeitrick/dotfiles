@@ -116,6 +116,7 @@ code --install-extension samuelcolvin.jinjahtml
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension eamodio.gitlens
 code --install-extension stormwarning.json-template
+code --install-extension ms-vscode-remote.remote-containers
 
 ################################################################
 # Dev dependencies		                               #

@@ -26,6 +26,7 @@ code --install-extension samuelcolvin.jinjahtml
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension eamodio.gitlens
 code --install-extension stormwarning.json-template
+code --install-extension ms-vscode-remote.remote-containers
 
 # Extensions for Windows only
 code --install-extension ms-vscode.powershell
