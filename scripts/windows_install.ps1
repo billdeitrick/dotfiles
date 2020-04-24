@@ -25,6 +25,7 @@ choco install conemu -y
 choco install fontforge -y
 choco install docker-desktop -y
 choco install typora -y
+choco install ffmpeg -y
 
 ################################################################
 # Install Desktop Software                                     #
