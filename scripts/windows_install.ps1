@@ -50,7 +50,7 @@ choco install keepass -y
 choco install firefox -y
 choco install nmap -y
 choco install notepadplusplus -y
-choco install obs -y
+choco install obs-studio -y
 choco install orca -y
 choco install pingplotter -y
 choco install fiddler -y
