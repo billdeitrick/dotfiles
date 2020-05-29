@@ -97,7 +97,9 @@ PYTHON27=$(~/.pyenv/bin/pyenv install --list | sed 's/^  //' | grep --invert-mat
 ~/.pyenv/bin/pyenv global $PYTHON_LATEST
 
 # Since pyenv shims won't actually be default yet, we'll call them explicitly to use latest python and get Pipenv
-~/.pyenv/shims/pip install -U pipenv
+~/.pyenv/shims/pip install --user pipenv
+~/.pyenv/shims/pip install --user cookiecutter
+~/.pyenv/shims/pip install --user cruft
 
 # Done with Python...pipenv handles all other magic
 

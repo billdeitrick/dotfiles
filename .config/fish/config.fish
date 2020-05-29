@@ -38,6 +38,9 @@ switch (uname)
 
         status --is-interactive; and source (pyenv init -|psub)
 
+        # Setup user-level Python bin path
+        set -gx PATH "$HOME/.local/bin:$PATH"
+
         # Setup rbenv for Linux
         set -gx RBENV_ROOT "$HOME/.rbenv"
         set -gx PATH "$RBENV_ROOT/bin:$PATH"
