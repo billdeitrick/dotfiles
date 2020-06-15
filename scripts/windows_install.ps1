@@ -62,6 +62,7 @@ choco install wireshark -y
 choco install xmlnotepad -y
 choco install putty -y
 choco install rufus -y
+choco install windirstat -y
 
 # Cleanup
 Remove-Item -Path 'C:\Users\Public\Desktop\ConEmu (x64).lnk' -Force
