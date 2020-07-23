@@ -9,5 +9,6 @@
     },
     "files.autoSave": "off",
     "explorer.confirmDelete": false,
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "workbench.colorTheme": "Visual Studio 2019 Dark"
 }

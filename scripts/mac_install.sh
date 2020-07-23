@@ -109,6 +109,7 @@ echo "######### Install vscode extensions #########"
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension stormwarning.json-template
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vscode-remote.remote-containers
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-dotnettools.csharp
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension msazurermtools.azurerm-vscode-tools
 
 ################################################################
 # Install CLI tools                                            #
