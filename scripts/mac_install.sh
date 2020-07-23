@@ -88,6 +88,7 @@ brew cask install typora
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install docker
+brew cask install microsoft-edge
 
 ################################################################
 # Install vscode extensions                                    #
@@ -107,6 +108,7 @@ echo "######### Install vscode extensions #########"
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension eamodio.gitlens
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension stormwarning.json-template
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vscode-remote.remote-containers
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-dotnettools.csharp
 
 ################################################################
 # Install CLI tools                                            #
@@ -237,6 +239,14 @@ echo "######### Install Node Modules #########"
 npm install -g serverless
 npm install -g yo 
 npm install -g generator-serverless-policy
+
+################################################################
+# Dotnet Core                                                  #
+################################################################
+
+echo "######### Install Dotnet Core #########" 
+
+brew cask install dotnet-sdk
 
 ################################################################
 # Change system settings                                       #
