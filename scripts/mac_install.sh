@@ -75,7 +75,6 @@ echo "######### Install non-mas apps with Homebrew #########"
 brew cask install osxfuse
 brew cask install cryptomator
 brew cask install google-backup-and-sync
-brew cask install gnucash
 brew cask install visual-studio-code
 brew cask install keepassx
 brew cask install airtool
