@@ -111,6 +111,7 @@ echo "######### Install vscode extensions #########"
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vscode-remote.remote-containers
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-dotnettools.csharp
 /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension msazurermtools.azurerm-vscode-tools
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-azuretools.vscode-azurefunctions
 
 ################################################################
 # Install CLI tools                                            #
