@@ -89,6 +89,7 @@ brew cask install iterm2
 brew cask install docker
 brew cask install microsoft-edge
 brew cask install adobe-acrobat-reader
+brew cask install postman
 
 ################################################################
 # Install vscode extensions                                    #
