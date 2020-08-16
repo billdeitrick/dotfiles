@@ -144,6 +144,9 @@ brew install vim
 brew install gpg
 brew install telnet
 
+brew tap azure/functions
+brew install azure-functions-core-tools@3
+
 ################################################################
 # Fish!                                                        #
 ################################################################
