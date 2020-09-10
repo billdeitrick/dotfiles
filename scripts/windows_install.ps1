@@ -81,6 +81,11 @@ Write-Host "######### Install PowerShell Modules #########"
 # Trust the PSGallery repository
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
 
-Install-Module MSOnline -Force
-Install-Module Azure -Force
-Install-Module ExchangeOnline -Force
+# Ensure updated packages for NuGet, PowerShellGet
+Install-Module -Name NuGet -Force
+Install-Module -Name PowerShellGet -Force
+
+Install-Module -Name MSOnline -Force
+Install-Module -Name Azure -Force
+Install-Module -Name ExchangeOnline -Force
+Install-Module -Name Pester -Force -SkipPublisherCheck # Otherwise this errs out
