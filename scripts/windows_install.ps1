@@ -48,6 +48,7 @@ choco install wireshark -y
 choco install xmlnotepad -y
 choco install putty -y
 choco install windirstat -y
+choco install adobereader -y
 
 # Unused desktop apps
 #choco install audacity -y
