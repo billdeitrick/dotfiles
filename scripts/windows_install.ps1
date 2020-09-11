@@ -86,6 +86,6 @@ Install-Module -Name NuGet -Force
 Install-Module -Name PowerShellGet -Force
 
 Install-Module -Name MSOnline -Force
-Install-Module -Name Azure -Force
+Install-Module -Name Az -Force
 Install-Module -Name ExchangeOnline -Force
 Install-Module -Name Pester -Force -SkipPublisherCheck # Otherwise this errs out
