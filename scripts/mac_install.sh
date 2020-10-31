@@ -91,6 +91,11 @@ brew cask install microsoft-edge
 brew cask install adobe-acrobat-reader
 brew cask install postman
 
+brew tap homebrew/cask-drivers
+brew cask install displaylink
+brew cask install logitech-options
+brew cask install kensington-trackball-works
+
 ################################################################
 # Install vscode extensions                                    #
 ################################################################
@@ -194,8 +199,10 @@ pyenv install $PYTHON_LATEST # Python 3 Latest
 # Tell pyenv what our default Python will be
 pyenv global $PYTHON_LATEST
 
-# Since pyenv shims won't actually be default yet, we'll call them explicitly to use latest python and get Pipenv
+# Since pyenv shims won't actually be default yet, we'll call them explicitly to use latest python
 ~/.pyenv/shims/pip install -U pipenv
+~/.pyenv/shims/pip install -U flake8
+~/.pyenv/shims/pip install -U pytest
 
 # Done with Python...pipenv handles all other magic
 
