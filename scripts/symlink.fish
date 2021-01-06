@@ -1,11 +1,11 @@
-#! /usr/local/bin/fish
+#! /usr/bin/env fish
 
 # Set appropriate path depending on OS
 switch (uname)
     case Darwin
         set DOTFILE_SYMLINK_ROOT "~/Documents/dev/dotfiles"
     case Linux
-        set DOTFILE_SYMLINK_ROOT "/mnt/c/Users/bill.deitrick/dev/dotfiles"
+        set DOTFILE_SYMLINK_ROOT "/mnt/c/Users/$LOGNAME/dev/dotfiles"
 
         # WSL detection inspired by https://stackoverflow.com/questions/38086185/how-to-check-if-a-program-is-run-in-bash-on-ubuntu-on-windows-and-not-just-plain
         if grep -qE "(Microsoft|WSL)" /proc/version
