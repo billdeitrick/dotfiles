@@ -16,10 +16,6 @@ if ($env:OneDrive) {
 
 Start-Process powershell.exe -Verb Runas -ArgumentList "-Command & {
 
-    # VSCode
-    Remove-Item -Path $USERPROFILE\AppData\Roaming\Code\User\settings.json -Force
-    New-Item -Path $USERPROFILE\AppData\Roaming\Code\User\settings.json -ItemType SymbolicLink -Value $USERPROFILE\dev\dotfiles\VSCode\settings.json
-
     Remove-Item -Path $USERPROFILE\.gitignore -Force
     New-Item -Path $USERPROFILE\.gitignore -ItemType SymbolicLink -Value $USERPROFILE\dev\dotfiles\.gitignore
 

@@ -44,37 +44,6 @@ for funcfile in $DOTFILE_SYMLINK_ROOT/.config/fish/functions/*
     end
 end
 
-# vscode
-
-## Symlink all dotfiles in VSCode folder
-for filesrc in $DOTFILE_SYMLINK_ROOT/VSCode/*
-    switch (uname)
-        case Darwin
-            set filedst (echo ~/Library/Application\ Support/Code/User/(echo $filesrc | tr '/' '\n' | tail -1))
-
-            if test -e $filedst
-                rm $filedst
-            end
-
-            ln -s $filesrc $filedst
-        case Linux
-            # We only do this if not WSL (we don't install VSCODE in WSL)
-            if test IS_SYMLINK_WSL = 0
-                set filedst (echo ~/.config/Code/User/(echo $filesrc | tr '/' '\n' | tail -1))
-
-                if test -e $filedst
-                    rm $filedst
-                end
-
-                ln -s $filesrc $filedst
-            end
-        case '*'
-            echo "No VSCode symlinks for this os."
-            break
-    end
-
-end
-
 # git
 
 ## .gitignore
