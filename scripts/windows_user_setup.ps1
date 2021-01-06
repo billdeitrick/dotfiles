@@ -55,3 +55,22 @@ Write-Host "######### Install Python Stuff #########"
 pip install --user pipenv
 pip install --user cookiecutter
 pip install --user cruft
+
+################################################################
+# Install Powershell Modules                                   #
+################################################################
+
+Write-Host "######### Install PowerShell Modules #########"
+
+# Trust the PSGallery repository
+Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+
+# Ensure updated packages for NuGet, PowerShellGet
+Install-Module -Name NuGet -Scope CurrentUser -Force
+Install-Module -Name PowerShellGet -Scope CurrentUser -Force
+
+Install-Module -Name MSOnline -Scope CurrentUser -Force
+Install-Module -Name Az -Scope CurrentUser -Force
+Install-Module -Name ExchangeOnline -Scope CurrentUser -Force
+Install-Module -Name Pester -Scope CurrentUser -Force -SkipPublisherCheck # Otherwise this errs out
+Install-Module -Name ImportExcel -Scope CurrentUser -Force

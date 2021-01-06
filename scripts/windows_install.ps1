@@ -24,6 +24,10 @@ choco install vscode -y
 choco install conemu -y
 choco install docker-desktop -y
 choco install typora -y
+choco install Nuget.CommandLine -y
+choco install postman -y
+choco install dotpeek -y
+choco install azcopy10 -y
 
 # Unused desktop apps
 #choco install fontforge -y
@@ -49,6 +53,8 @@ choco install xmlnotepad -y
 choco install putty -y
 choco install windirstat -y
 choco install adobereader -y
+choco install microsoftazurestorageexplorer -y
+choco install slack -y
 
 # Unused desktop apps
 #choco install audacity -y
@@ -66,7 +72,6 @@ choco install adobereader -y
 #choco install chrome -y
 #choco install obs-studio -y
 #choco install pingplotter -y
-#choco install slack -y
 #choco install rufus -y
 #choco install vcxsrv -y
 
@@ -90,3 +95,4 @@ Install-Module -Name MSOnline -Force
 Install-Module -Name Az -Force
 Install-Module -Name ExchangeOnline -Force
 Install-Module -Name Pester -Force -SkipPublisherCheck # Otherwise this errs out
+Install-Module -Name ImportExcel
