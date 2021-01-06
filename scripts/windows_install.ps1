@@ -77,22 +77,3 @@ choco install slack -y
 
 # Cleanup
 Remove-Item -Path 'C:\Users\Public\Desktop\ConEmu (x64).lnk' -Force
-
-################################################################
-# Install Powershell Modules                                   #
-################################################################
-
-Write-Host "######### Install PowerShell Modules #########"
-
-# Trust the PSGallery repository
-Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
-
-# Ensure updated packages for NuGet, PowerShellGet
-Install-Module -Name NuGet -Force
-Install-Module -Name PowerShellGet -Force
-
-Install-Module -Name MSOnline -Force
-Install-Module -Name Az -Force
-Install-Module -Name ExchangeOnline -Force
-Install-Module -Name Pester -Force -SkipPublisherCheck # Otherwise this errs out
-Install-Module -Name ImportExcel
