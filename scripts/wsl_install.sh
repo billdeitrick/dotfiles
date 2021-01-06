@@ -30,6 +30,7 @@ sudo apt-get install -y curl
 sudo apt-get install -y screen
 sudo apt-get install -y iperf
 sudo apt-get install -y nmap
+sudo apt-get install -y mtr
 
 ################################################################
 # Dev dependencies		                               #
