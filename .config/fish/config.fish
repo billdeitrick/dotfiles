@@ -18,14 +18,13 @@ switch (uname)
         status --is-interactive; and source (rbenv init -|psub)
 
     case Linux
-        # Set dev directory path
+        # Set dev directory path, assuming WSL for now; can fix later if need be
         set -gx DEV_FOLDER_PATH "/mnt/c/Users/$LOGNAME/dev"
 
         # Set an env variable indicating whether or not this is WSL
         # WSL detection inspired by https://stackoverflow.com/questions/38086185/how-to-check-if-a-program-is-run-in-bash-on-ubuntu-on-windows-and-not-just-plain
         if grep -qE "(Microsoft|WSL)" /proc/version
             set IS_WSL = 1
-            
         else
             set IS_WSL = 0
         end
