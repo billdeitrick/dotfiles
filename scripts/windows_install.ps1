@@ -43,7 +43,7 @@ choco install windirstat -y
 choco install adobereader -y
 choco install microsoftazurestorageexplorer -y
 choco install slack -y
-choco install chrome -y
+choco install googlechrome -y
 choco install pandoc -y
 
 # Unused desktop apps
