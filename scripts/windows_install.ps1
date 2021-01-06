@@ -13,10 +13,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 choco feature enable -n=useRememberedArgumentsForUpgrades
 
 ################################################################
-# Install Dev                                                  #
+# Chocolatey Packages Install                                  #
 ################################################################
 
-Write-Host "######### Install Dev Stuff #########"
+Write-Host "######### Chocolatey Packages Install #########"
 
 choco install git -y --params "/GitOnlyOnPath /NoAutoCrlf /WindowsTerminal /NoShellIntegration"
 choco install hackfont-windows -y
@@ -27,17 +27,6 @@ choco install Nuget.CommandLine -y
 choco install postman -y
 choco install dotpeek -y
 choco install azcopy10 -y
-
-# Unused desktop apps
-#choco install fontforge -y
-#choco install ffmpeg -y
-
-################################################################
-# Install Desktop Software                                     #
-################################################################
-
-Write-Host "######### Install Desktop Software #########"
-
 choco install 7zip -y
 choco install hxd -y
 choco install firefox -y
@@ -54,6 +43,8 @@ choco install windirstat -y
 choco install adobereader -y
 choco install microsoftazurestorageexplorer -y
 choco install slack -y
+choco install chrome -y
+choco install pandoc -y
 
 # Unused desktop apps
 #choco install audacity -y
@@ -68,8 +59,9 @@ choco install slack -y
 #choco install jitsi -y
 #choco install kdiff3 -y
 #choco install keepass -y
-#choco install chrome -y
 #choco install obs-studio -y
 #choco install pingplotter -y
 #choco install rufus -y
 #choco install vcxsrv -y
+#choco install fontforge -y
+#choco install ffmpeg -y
