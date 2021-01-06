@@ -3,6 +3,3 @@
 
 # Ignore DS Store
 .DS_Store
-
-# Ignore vscode dir
-.vscode
