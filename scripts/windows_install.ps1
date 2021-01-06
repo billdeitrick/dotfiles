@@ -45,6 +45,7 @@ choco install microsoftazurestorageexplorer -y
 choco install slack -y
 choco install chrome -y
 choco install pandoc -y
+choco install bfg-repo-cleaner -y
 
 # Unused desktop apps
 #choco install audacity -y
