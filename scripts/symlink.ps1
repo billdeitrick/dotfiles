@@ -15,9 +15,6 @@ if ($env:OneDrive) {
 }
 
 Start-Process powershell.exe -Verb Runas -ArgumentList "-Command & {
-    # Conemu
-    Remove-Item -Path $USERPROFILE\AppData\Roaming\ConEmu.xml -Force
-    New-Item -Path $USERPROFILE\AppData\Roaming\ConEmu.xml -ItemType SymbolicLink -Value $USERPROFILE\dev\dotfiles\conemu\ConEmu.xml
 
     # VSCode
     Remove-Item -Path $USERPROFILE\AppData\Roaming\Code\User\settings.json -Force

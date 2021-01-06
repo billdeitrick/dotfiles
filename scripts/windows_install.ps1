@@ -21,7 +21,6 @@ Write-Host "######### Install Dev Stuff #########"
 choco install git -y --params "/GitOnlyOnPath /NoAutoCrlf /WindowsTerminal /NoShellIntegration"
 choco install hackfont-windows -y
 choco install vscode -y
-choco install conemu -y
 choco install docker-desktop -y
 choco install typora -y
 choco install Nuget.CommandLine -y
@@ -74,6 +73,3 @@ choco install slack -y
 #choco install pingplotter -y
 #choco install rufus -y
 #choco install vcxsrv -y
-
-# Cleanup
-Remove-Item -Path 'C:\Users\Public\Desktop\ConEmu (x64).lnk' -Force
