@@ -77,10 +77,6 @@ end
 
 # git
 
-## .gitconfig
-rm ~/.gitconfig
-ln -s $DOTFILE_SYMLINK_ROOT/.gitconfig ~/.gitconfig
-
 ## .gitignore
 rm ~/.gitignore
 ln -s $DOTFILE_SYMLINK_ROOT/.gitignore ~/.gitignore

@@ -20,10 +20,6 @@ Start-Process powershell.exe -Verb Runas -ArgumentList "-Command & {
     Remove-Item -Path $USERPROFILE\AppData\Roaming\Code\User\settings.json -Force
     New-Item -Path $USERPROFILE\AppData\Roaming\Code\User\settings.json -ItemType SymbolicLink -Value $USERPROFILE\dev\dotfiles\VSCode\settings.json
 
-    # Git
-    Remove-Item -Path $USERPROFILE\.gitconfig -Force
-    New-Item -Path $USERPROFILE\.gitconfig -ItemType SymbolicLink -Value $USERPROFILE\dev\dotfiles\.gitconfig
-
     Remove-Item -Path $USERPROFILE\.gitignore -Force
     New-Item -Path $USERPROFILE\.gitignore -ItemType SymbolicLink -Value $USERPROFILE\dev\dotfiles\.gitignore
 
