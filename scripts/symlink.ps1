@@ -5,14 +5,9 @@
 # Get the current user profile path; this will be expanded when we pass off to an elevated shell below.
 $USERPROFILE = $env:USERPROFILE
 
-# Get the current OneDrive path; we assume KFM is used if OneDrive path is defined
-# String escaping here is a little wonky; this is necessary because with single ' powershell
-# won't expand the variables. But, we need to enclose the path in '' so it is parsed correctly.
-if ($env:OneDrive) {
-    $PSPROFILEPATH = "`'$env:ONEDRIVE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`'"
-} else {
-    $PSPROFILEPATH = "$USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
-}
+# Get the PowerShell profile path; use [Environment] so we can account for OD KFM
+$PSPROFILEPATH = "$([Environment]::GetFolderPath("MyDocuments"))\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+
 
 Start-Process powershell.exe -Verb Runas -ArgumentList "-Command & {
 
@@ -27,5 +22,5 @@ Start-Process powershell.exe -Verb Runas -ArgumentList "-Command & {
     New-Item -Path $PSPROFILEPATH -ItemType SymbolicLink -Value $USERPROFILE\dev\dotfiles\psprofile\Microsoft.PowerShell_profile.ps1
 
     # For debug
-    #pause
+    # pause
 }"
