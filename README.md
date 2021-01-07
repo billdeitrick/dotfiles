@@ -1,6 +1,6 @@
 # dotfiles
 
-Sets up my preferred development config for Mac and Linux environments. Uses [Hyper]() and [Fish](https://github.com/fish-shell/fish-shell) shell with [bobthefish](https://github.com/oh-my-fish/theme-bobthefish) theme (on Unices...PowerShell is default on Windows). 
+Sets up my preferred config for Mac, Windows, and Linux environments.
 
 Inspired by:
 * [kennethreitz/dotfiles](https://github.com/kennethreitz/dotfiles)
@@ -21,23 +21,26 @@ The goal is to automate as much app and dev toolchain setup as possible. Here's 
 
 ### Windows
 
-```powershell
-# Must run this as a local admin
-.\scripts\windows_install.ps1
+### Set Up Windows
 
-# Must run these as standard user
-# Symlink will require elevation
-.\scripts\windows_user_setup.ps1
-.\scipts\symlink.ps1
-```
+Some apps on Windows can't be installed via Chocolatey; they come from the Windows store, other less easily accessible sources, etc. Here is a list of manual setup to be performed:
 
-#### WSL
+1. Install password manager
+1. Enable HyperV (`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All`)
+1. Install MS Office if applicable
+1. Install Windows terminal from windows store
+1. Download dotfiles repo from github. Drop anywhere, extract, and run from admin PowerShell: `.\scripts\windows_install.ps1`
+1. Clone the dotfiles repo into %UserProfile%\dev
+1. CD into $UserProfile%\dev and run `.\scripts\windows_user_setup.ps1` and `.\scripts\symlink.ps1`
 
-```bash
-/bin/bash scripts/wsl_install.sh
-/usr/bin/fish scripts/symlink.fish
-/usr/bin/fish scripts/fish-bootstrap.fish
-```
+Follow Microsoft [instructions for installing WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+
+#### Set Up WSL
+
+1. Open WSL, cd into `dev/dotfiles`
+1. Run install script: `/bin/bash scripts/wsl_install.sh`
+1. Run fish script: `/usr/bin/fish scripts/symlink.fish`
+1. Run fish script: `/usr/bin/fish scripts/fish-bootstrap.fish`
 
 ### Symlinking (for all Operating Systems)
 
