@@ -45,6 +45,7 @@ choco install microsoftazurestorageexplorer -y
 choco install slack -y
 choco install googlechrome -y
 choco install pandoc -y
+choco install powershell-core -y
 
 # Unused desktop apps
 #choco install audacity -y
