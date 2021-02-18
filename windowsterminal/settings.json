@@ -32,8 +32,6 @@
             // Put settings here that you want to apply to all profiles.
             "fontFace": "Hack",
             "fontSize": 11,
-            "useAcrylic": true,
-            "acrylicOpacity": 0.6,
             "colorScheme": "One Half Dark"
         },
         "list":
