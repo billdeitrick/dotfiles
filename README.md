@@ -3,7 +3,7 @@
 Sets up my preferred config for Mac, Windows, and Linux environments.
 
 Inspired by:
-* [kennethreitz/dotfiles](https://github.com/kennethreitz/dotfiles)
+* [kennethreitz/dotfiles](https://github.com/kennethreitz-archive/dotfiles)
 * [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
 * [andrewconnell/osxinstall](https://github.com/andrewconnell/osx-install)
 
