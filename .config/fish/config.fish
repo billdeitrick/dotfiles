@@ -3,7 +3,7 @@
 switch (uname)
     case Darwin
         # Set dev directory path
-        set -gx DEV_FOLDER_PATH "~/Documents/dev"
+        set -gx DEV_FOLDER_PATH ~/Documents/dev
 
         # Add GNU coreutils to path
         set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH

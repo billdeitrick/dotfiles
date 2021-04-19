@@ -3,7 +3,7 @@
 # Set appropriate path depending on OS
 switch (uname)
     case Darwin
-        set DOTFILE_SYMLINK_ROOT "~/Documents/dev/dotfiles"
+        set DOTFILE_SYMLINK_ROOT ~/Documents/dev/dotfiles
     case Linux
         set DOTFILE_SYMLINK_ROOT "/mnt/c/Users/$LOGNAME/dev/dotfiles"
 
@@ -24,12 +24,10 @@ end
 ## Fish config and functions 
 
 ### config.fish
-rm ~/.config/fish/config.fish
-ln -s $DOTFILE_SYMLINK_ROOT/.config/fish/config.fish ~/.config/fish/config.fish
+ln -sf "$DOTFILE_SYMLINK_ROOT/.config/fish/config.fish" ~/.config/fish/config.fish
 
 ### fishfile
-rm ~/.config/fish/fishfile
-ln -s $DOTFILE_SYMLINK_ROOT/.config/fish/fishfile ~/.config/fish/fishfile
+ln -sf "$DOTFILE_SYMLINK_ROOT/.config/fish/fish_plugins" ~/.config/fish/fish_plugins
 
 ### All custom Fish functions
 if not test -e ~/.config/fish/functions
@@ -47,5 +45,4 @@ end
 # git
 
 ## .gitignore
-rm ~/.gitignore
-ln -s $DOTFILE_SYMLINK_ROOT/.gitignore ~/.gitignore
+ln -sf $DOTFILE_SYMLINK_ROOT/.gitignore ~/.gitignore

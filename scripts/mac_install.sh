@@ -72,29 +72,29 @@ mas install 1333542190 # 1Password 7
 echo "######### Install non-mas apps with Homebrew #########"
 
 # Install HomeBrew GUI apps
-brew cask install osxfuse
-brew cask install cryptomator
-brew cask install google-backup-and-sync
-brew cask install visual-studio-code
-brew cask install keepassx
-brew cask install airtool
-brew cask install gimp
-brew cask install wireshark
-brew cask install inkscape
-brew cask install virtualbox # Will need to approve kernel extensions
-brew cask install vagrant
-brew cask install typora
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install docker
-brew cask install microsoft-edge
-brew cask install adobe-acrobat-reader
-brew cask install postman
+brew install osxfuse
+brew install cryptomator
+brew install google-backup-and-sync
+brew install visual-studio-code
+brew install keepassx
+brew install airtool
+brew install gimp
+brew install wireshark
+brew install inkscape
+brew install virtualbox # Will need to approve kernel extensions
+brew install vagrant
+brew install typora
+brew install google-chrome
+brew install iterm2
+brew install docker
+brew install microsoft-edge
+brew install adobe-acrobat-reader
+brew install postman
 
 brew tap homebrew/cask-drivers
-brew cask install displaylink
-brew cask install logitech-options
-brew cask install kensington-trackball-works
+brew install displaylink
+brew install logitech-options
+brew install kensington-trackball-works
 
 ################################################################
 # Install vscode extensions                                    #
@@ -126,16 +126,16 @@ echo "######### Install cli tools with Homebrew #########"
 
 brew install coreutils
 brew install diffutils
-brew install findutils --with-default-names
+brew install findutils
 brew install gawk
-brew install gnu-sed --with-default-names
-brew install gnu-tar --with-default-names
-brew install gnu-which --with-default-names
-brew install grep --with-default-names
+brew install gnu-sed
+brew install gnu-tar
+brew install gnu-which
+brew install grep
 brew install gzip
 brew install screen
 brew install watch
-brew install wdiff --with-gettext
+brew install wdiff
 brew install wget
 brew install less
 brew install make
@@ -169,10 +169,11 @@ sudo bash -c "echo /usr/local/bin/fish >> /etc/shells"
 chsh -s /usr/local/bin/fish
 
 # Get a nerdfonts for Fish
-brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
 
 # Get completions for Fish
+mkdir ~/.config/fish/completions
 curl -Lo ~/.config/fish/completions/docker.fish https://raw.githubusercontent.com/docker/cli/master/contrib/completion/fish/docker.fish
 
 ################################################################
@@ -185,8 +186,6 @@ echo "######### Install Python Dev Stuff #########"
 brew install pyenv
 
 brew install readline xz # dependency for installing Python versions
-
-sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target / # Headers required to build Python on Mojave and ^
 
 # Set a var with the latest stable Python version...we'll use this multiple times (inspired by https://stackoverflow.com/questions/29687140/install-latest-python-version-with-pyenv)
 PYTHON_LATEST=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\)' | tail -1)
@@ -218,7 +217,7 @@ brew install rbenv
 curl https://cli-assets.heroku.com/install.sh | sh
 
 # Set a var with the latest stable Ruby version available from rbenv
-RUBY_LATEST=$(rbenv install --list | grep '^\s\+[0-9]\.[0-9]\.[0-9]$' | tail -1)
+RUBY_LATEST=$(rbenv install -L | grep '^[0-9]\.[0-9]\.[0-9]$' | tail -1)
 
 # Get the latest stable Ruby version from rbenv
 rbenv install $RUBY_LATEST
@@ -259,7 +258,7 @@ npm install -g generator-serverless-policy
 
 echo "######### Install Dotnet Core #########" 
 
-brew cask install dotnet-sdk
+brew install dotnet-sdk
 
 ################################################################
 # Change system settings                                       #
