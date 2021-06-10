@@ -94,7 +94,6 @@ brew install postman
 brew tap homebrew/cask-drivers
 brew install displaylink
 brew install logitech-options
-brew install kensington-trackball-works
 
 ################################################################
 # Install vscode extensions                                    #
