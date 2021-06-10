@@ -86,7 +86,7 @@ brew install vagrant
 brew install typora
 brew install google-chrome
 brew install iterm2
-brew install docker
+brew install homebrew/cask/docker # Need the cask for Docker Desktop
 brew install microsoft-edge
 brew install adobe-acrobat-reader
 brew install postman
