@@ -28,7 +28,7 @@ echo "######### Install Homebrew #########"
 ################################################################
 
 echo "######### Manage App Store Apps with MAS #########"
-brew install mas
+/opt/homebrew/bin/brew install mas
 
 ################################################################
 # Pause                                                        #
@@ -42,7 +42,7 @@ read -p ""
 ################################################################
 
 echo "######### Installing Apps from Brewfile #########"
-brew bundle install --file ~/Documents/dev/dotfiles/scripts/Brewfile-Work --no-lock
+/opt/homebrew/bin/brew bundle install --file ~/Documents/dev/dotfiles/scripts/Brewfile-Work --no-lock
 
 ################################################################
 # Pause                                                        #
