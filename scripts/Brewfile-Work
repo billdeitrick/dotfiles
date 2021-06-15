@@ -1,0 +1,83 @@
+################################################################
+# Brew Native                                                  #
+################################################################
+
+# Taps
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+
+# Browsers
+cask "microsoft-edge"
+cask "google-chrome"
+cask "firefox"
+
+# Device support
+cask "logitech-options"
+cask "steermouse"
+cask "displaylink"
+
+# General
+brew "mas"
+cask "microsoft-teams"
+cask "snagit"
+cask "adobe-acrobat-reader"
+cask "airtool"
+brew "wireshark"
+brew "nmap"
+brew "mtr"
+
+# Dev Tools
+cask "font-hack-nerd-font"
+cask "visual-studio-code"
+cask "powershell"
+cask "postman"
+cask "typora"
+cask "jetbrains-toolbox"
+cask "iterm2"
+cask "dotnet-sdk"
+cask "docker"
+brew "python@3.9"
+
+# Shell and Core Shell Utils
+brew "fish"
+brew "coreutils"
+brew "diffutils"
+brew "findutils"
+brew "gawk"
+brew "git"
+brew "gnu-sed"
+brew "gnu-tar"
+brew "gnu-which"
+brew "wget"
+brew "grep"
+brew "less"
+brew "make"
+brew "nano"
+brew "openssh"
+brew "rsync"
+brew "screen"
+brew "telnet"
+brew "unzip"
+brew "vim"
+brew "watch"
+brew "wdiff"
+
+################################################################
+# App Store                                                    #
+################################################################
+
+# Microsoft 365
+mas "Microsoft OneNote", id: 784801555
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Microsoft Outlook", id: 985367838
+mas "OneDrive", id: 823766827
+
+# Misc
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "LastPass Password Manager", id: 926036361
