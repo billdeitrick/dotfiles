@@ -14,9 +14,13 @@ The goal is to automate as much app and dev toolchain setup as possible. Here's 
 ### MacOS
 
 ```bash
-/bin/bash scripts/mac_install.sh
-/usr/local/bin/fish scripts/fish-bootstrap.fish
+# Run one of the following bash scripts
+/bin/bash scripts/mac_install_work_arm.sh
+/bin/bash scripts/mac_install_personal_intel.sh
+
+# Run the following two fish scripts
 /usr/local/bin/fish scripts/symlink.fish
+/usr/local/bin/fish scripts/fish-bootstrap.fish
 ```
 
 ### Windows
