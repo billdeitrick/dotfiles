@@ -5,17 +5,42 @@ switch (uname)
         # Set dev directory path
         set -gx DEV_FOLDER_PATH ~/Documents/dev
 
-        # Add GNU coreutils to path
-        set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
-
         # Set the color scheme for Bob the Fish; base16 on MacOs
         set -g theme_color_scheme base16
 
-        # Setup pyenv for MacOS
-        status --is-interactive; and source (pyenv init -|psub)
+        # Add GNU coreutils to path
+        if test -d /usr/local/opt/coreutils/libexec/gnubin
+            set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
+        else
+            # Update PATH
+            ## Override MacOS utilities with GNU
+            set -gx PATH "/opt/homebrew/opt/coreutils/libexec/gnubin" $PATH
+            set -gx PATH "/opt/homebrew/opt/findutils/libexec/gnubin" $PATH
+            set -gx PATH "/opt/homebrew/opt/grep/libexec/gnubin" $PATH
+            set -gx PATH "/opt/homebrew/opt/gnu-sed/libexec/gnubin" $PATH
+            set -gx PATH "/opt/homebrew/opt/gnu-tar/libexec/gnubin" $PATH
+            set -gx PATH "/opt/homebrew/opt/gnu-which/libexec/gnubin" $PATH
+            set -gx PATH "/opt/homebrew/opt/make/libexec/gnubin" $PATH
+            set -gx PATH "/opt/homebrew/opt/unzip/libexec/gnubin" $PATH
+            set -gx PATH "/opt/homebrew/opt/unzip/bin" $PATH
+            set -gx PATH "/opt/homebrew/opt/openssl/bin" $PATH
 
-        # Setup rbenv for MacOS
-        status --is-interactive; and source (rbenv init -|psub)
+            ## Brew bin dirs
+            set -gx PATH "/opt/homebrew/bin" $PATH
+            set -gx PATH "/opt/homebrew/sbin" $PATH
+        end
+
+        # Setup pyenv for MacOS if it is available
+        which pyenv > /dev/null 2&>1
+        if test $status -eq 0
+            status --is-interactive; and source (pyenv init -|psub)
+        end
+
+        # Setup rbenv for MacOs if it is available
+        which rbenv > /dev/null 2&>1
+        if test $status -eq 0
+            status --is-interactive; and source (rbenv init -|psub)
+        end
 
     case Linux
         # Set dev directory path, assuming WSL for now; can fix later if need be
