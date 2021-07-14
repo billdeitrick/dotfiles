@@ -31,13 +31,13 @@ switch (uname)
         end
 
         # Setup pyenv for MacOS if it is available
-        which pyenv > /dev/null 2&>1
+        which pyenv > /dev/null 2>&1
         if test $status -eq 0
             status --is-interactive; and source (pyenv init -|psub)
         end
 
         # Setup rbenv for MacOs if it is available
-        which rbenv > /dev/null 2&>1
+        which rbenv > /dev/null 2>&1
         if test $status -eq 0
             status --is-interactive; and source (rbenv init -|psub)
         end
