@@ -116,6 +116,29 @@ if [[ ! -f "/Users/$LOGNAME/.dotfiles_install_complete" ]]; then
 fi
 
 ################################################################
+# NVM Install                                                  #
+################################################################
+
+echo "######### Install NVM #########" 
+# NVM install...not officially "supported" via brew
+if [[ ! -f "/Users/$LOGNAME/.nvm/nvm.sh" ]]; then
+  echo "Installing NVM."
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+  echo "Done installing NVM."
+else
+  echo "NVM already installed."
+fi
+
+################################################################
+# Pause                                                        #
+################################################################
+
+if [[ ! -f "/Users/$LOGNAME/.dotfiles_install_complete" ]]; then
+  echo "######### Pause: Verify all operations so far. [Enter] to continue. #########"
+  read -p ""
+fi
+
+################################################################
 # Cleanup unwanted default apps                                #
 ################################################################
 
