@@ -197,6 +197,28 @@ if [[ ! -f "/Users/$LOGNAME/.dotfiles_install_complete" ]]; then
 fi
 
 ################################################################
+# Register SSH Agent Plist                                     #
+################################################################
+
+echo "######### Copy SSH Agent Key Registration Plist #########"
+
+if [[ ! -f "/Users/$LOGNAME/Library/LaunchAgents/us.deitrick.registersshkeys.plist" ]]; then
+  echo "Copying plist."
+  cp "/Users/$LOGNAME/Documents/dev/dotfiles/macos/LaunchAgents/us.deitrick.registersshkeys.plist" "/Users/$LOGNAME/Library/LaunchAgents/us.deitrick.registersshkeys.plist"
+else
+  echo "Plist is already in place."
+fi
+
+################################################################
+# Pause                                                        #
+################################################################
+
+if [[ ! -f "/Users/$LOGNAME/.dotfiles_install_complete" ]]; then
+  echo "######### Pause: Verify all operations so far. [Enter] to continue. #########"
+  read -p ""
+fi
+
+################################################################
 # Settings                                                     #
 ################################################################
 
@@ -245,6 +267,9 @@ if [[ ! -f "/Users/$LOGNAME/.dotfiles_install_complete" ]]; then
   echo "Settings > Keyboard > Shortcuts > Mission Control > Application Windows: CTRL + CMD + DOWN"
   echo "Settings > Keyboard > Shortcuts > Mission Control > Move left a space: CTRL + CMD + LEFT"
   echo "Settings > Keyboard > Shortcuts > Mission Control > Move right a space: CTRL + CMD + RIGHT"
+  echo ""
+  echo ">>SSH Agent<<"
+  echo "Register ssh keys using keychain for passwordless use. Execute /usr/bin/ssh-add -K and follow prompts."
 fi
 
 ################################################################
