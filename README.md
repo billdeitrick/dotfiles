@@ -13,6 +13,10 @@ The goal is to automate as much app and dev toolchain setup as possible. Here's 
 
 ### MacOS
 
+Before running setup scripts, perform the following:
+1. Ensure that the Terminal app has full disk permissions
+2. Ensure that you have signed in to the Mac App Store
+
 ```bash
 # Run one of the following bash scripts
 /bin/bash scripts/mac_install_work.sh
