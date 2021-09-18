@@ -121,14 +121,9 @@ fi
 
 echo "######### Install Python via pyenv #########"
 # If we've only got one Python version installed (system), install a few more
-if [ "$(pyenv versions | wc -l | xargs)" == "1" ] then
+if [ "$(pyenv versions | wc -l | xargs)" == "1" ]; then
   # Set a var with the latest stable Python version...we'll use this multiple times (inspired by https://stackoverflow.com/questions/29687140/install-latest-python-version-with-pyenv)
   PYTHON_LATEST=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\)' | tail -1)
-  PYTHON27=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\)' | grep 2[.]7 | tail -1)
-
-  # Get the latest stable Python versions from pyenv
-  echo "Installing Python27"
-  pyenv install $PYTHON27
 
   echo "Installing Python Latest"
   pyenv install $PYTHON_LATEST
@@ -162,7 +157,7 @@ fi
 
 echo "######### Install Ruby via rbenv #########"
 # If we've only got one Ruby version installed (system), install latest
-if [ "$(rbenv versions | wc -l | xargs)" == "1" ] then
+if [ "$(rbenv versions | wc -l | xargs)" == "1" ]; then
 # Set a var with the latest stable Ruby version available from rbenv
   RUBY_LATEST=$(rbenv install -L | grep '^[0-9]\.[0-9]\.[0-9]$' | tail -1)
 
