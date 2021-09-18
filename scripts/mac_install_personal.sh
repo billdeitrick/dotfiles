@@ -6,8 +6,9 @@
 # Install Rosetta2                                             #
 ################################################################
 
+# https://community.jamf.com/t5/jamf-pro/how-to-check-if-rosetta2-is-installed-macos-11-5/m-p/242581
 echo "######### Install Rosetta2 #########" 
-if [[ ! -f "/Library/Apple/System/Library/LaunchDaemons/com.apple.oahd.plist" ]]; then
+if ! /usr/bin/pgrep oahd >/dev/null 2>&1; then
   /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 else
   echo "Rosetta2 already installed."
@@ -119,28 +120,35 @@ fi
 # Python                                                       #
 ################################################################
 
-echo "######### Install Python via pyenv #########"
-# If we've only got one Python version installed (system), install a few more
-if [ "$(pyenv versions | wc -l | xargs)" == "1" ]; then
-  # Set a var with the latest stable Python version...we'll use this multiple times (inspired by https://stackoverflow.com/questions/29687140/install-latest-python-version-with-pyenv)
-  PYTHON_LATEST=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\|rc\|miniforge\)' | tail -1)
+# Not working currently for some reason. Using HomeBrew python instead for now.
+# echo "######### Install Python via pyenv #########"
+# # If we've only got one Python version installed (system), install a few more
+# if [ "$(pyenv versions | wc -l | xargs)" == "1" ]; then
+#   # Set a var with the latest stable Python version...we'll use this multiple times (inspired by https://stackoverflow.com/questions/29687140/install-latest-python-version-with-pyenv)
+#   PYTHON_LATEST=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\|rc\|miniforge\)' | tail -1)
 
-  echo "Installing Python Latest"
-  pyenv install $PYTHON_LATEST
+#   echo "Installing Python Latest"
+#   arch -x86_64 pyenv install $PYTHON_LATEST
 
-  # Tell pyenv what our default Python will be
-  pyenv global $PYTHON_LATEST
+#   # Tell pyenv what our default Python will be
+#   pyenv global $PYTHON_LATEST
 
-  # Install pipx
-  ~/.pyenv/shims/pip install -U pipx
+#   # Install pipx
+#   ~/.pyenv/shims/pip install -U pipx
 
-  # Install Python tools with pipx
-  ~/.pyenv/shims/pipx install pipenv
-  ~/.pyenv/shims/pipx install flake8
-  ~/.pyenv/shims/pipx install pytest
-else
-  echo "Python install with Pyenv already complete."
-fi
+#   # Install Python tools with pipx
+#   ~/.pyenv/shims/pipx install pipenv
+#   ~/.pyenv/shims/pipx install flake8
+#   ~/.pyenv/shims/pipx install pytest
+# else
+#   echo "Python install with Pyenv already complete."
+# fi
+
+echo "######### Install Python tooling via Pipx #########"
+pip3 install -U pipx
+pipx install pipenv
+pipx install flake8
+pipx install pytest
 
 ################################################################
 # Pause                                                        #

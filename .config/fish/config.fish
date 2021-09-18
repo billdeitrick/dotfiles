@@ -13,7 +13,7 @@ switch (uname)
             set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
         else
             # Update PATH
-            ## Override MacOS utilities with GNU
+            ## Override MacOS utilities with GNU/HomeBrew
             set -gx PATH "/opt/homebrew/opt/coreutils/libexec/gnubin" $PATH
             set -gx PATH "/opt/homebrew/opt/findutils/libexec/gnubin" $PATH
             set -gx PATH "/opt/homebrew/opt/grep/libexec/gnubin" $PATH
@@ -24,10 +24,14 @@ switch (uname)
             set -gx PATH "/opt/homebrew/opt/unzip/libexec/gnubin" $PATH
             set -gx PATH "/opt/homebrew/opt/unzip/bin" $PATH
             set -gx PATH "/opt/homebrew/opt/openssl/bin" $PATH
+            set -gx PATH "/opt/homebrew/opt/python@3.9/libexec/bin" $PATH # Overrides system Python with brew 3.9
 
             ## Brew bin dirs
             set -gx PATH "/opt/homebrew/bin" $PATH
             set -gx PATH "/opt/homebrew/sbin" $PATH
+
+            ## Add ~/.local/bin to path for pipx
+            set -gx PATH "/Users/$LOGNAME/.local/bin" $PATH
         end
 
         # Setup pyenv for MacOS if it is available

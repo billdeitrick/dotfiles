@@ -48,9 +48,11 @@ cask "iterm2"
 cask "dotnet-sdk"
 cask "docker"
 brew "azure-functions-core-tools@3"
-brew "pyenv"
+# Pyenv is misbehaving on M1; disabling for now
+#brew "pyenv"
 brew "rbenv"
 brew "dotnet-sdk"
+brew "python@3.9"
 
 # Shell and Core Shell Utils
 brew "fish"
@@ -77,6 +79,8 @@ brew "watch"
 brew "wdiff"
 brew "readline"
 brew "xz"
+brew "zlib"
+brew "bzip2"
 
 ################################################################
 # App Store                                                    #
