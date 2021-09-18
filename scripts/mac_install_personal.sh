@@ -120,7 +120,8 @@ fi
 ################################################################
 
 echo "######### Install Python via pyenv #########"
-if ! pyenv versions | grep "set by" > /dev/null; then
+# If we've only got one Python version installed (system), install a few more
+if [ "$(pyenv versions | wc -l | xargs)" == "1" ] then
   # Set a var with the latest stable Python version...we'll use this multiple times (inspired by https://stackoverflow.com/questions/29687140/install-latest-python-version-with-pyenv)
   PYTHON_LATEST=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\)' | tail -1)
   PYTHON27=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\)' | grep 2[.]7 | tail -1)
@@ -160,7 +161,8 @@ fi
 ################################################################
 
 echo "######### Install Ruby via rbenv #########"
-if ! rbenv versions | grep "set by" > /dev/null; then
+# If we've only got one Ruby version installed (system), install latest
+if [ "$(rbenv versions | wc -l | xargs)" == "1" ] then
 # Set a var with the latest stable Ruby version available from rbenv
   RUBY_LATEST=$(rbenv install -L | grep '^[0-9]\.[0-9]\.[0-9]$' | tail -1)
 
@@ -238,30 +240,6 @@ if mas list | grep 408981434 > /dev/null; then
   sudo rm -rf /Applications/iMovie.app/
 else
   echo "iMovie not found."
-fi
-
-# Remove Pages if it's installed
-if mas list | grep 409201541 > /dev/null; then
-  echo "Removing Pages."
-  sudo rm -rf /Applications/Pages.app/
-else
-  echo "Pages not found."
-fi
-
-# Remove Numbers if it's installed
-if mas list | grep 409203825 > /dev/null; then
-  echo "Removing Numbers."
-  sudo rm -rf /Applications/Numbers.app/
-else
-  echo "Numbers not found."
-fi
-
-# Remove Keynote if it's installed
-if mas list | grep 409183694 > /dev/null; then
-  echo "Removing Keynote."
-  sudo rm -rf /Applications/Keynote.app/
-else
-  echo "Keynote not found."
 fi
 
 ################################################################
