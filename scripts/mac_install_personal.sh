@@ -123,7 +123,7 @@ echo "######### Install Python via pyenv #########"
 # If we've only got one Python version installed (system), install a few more
 if [ "$(pyenv versions | wc -l | xargs)" == "1" ]; then
   # Set a var with the latest stable Python version...we'll use this multiple times (inspired by https://stackoverflow.com/questions/29687140/install-latest-python-version-with-pyenv)
-  PYTHON_LATEST=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\)' | tail -1)
+  PYTHON_LATEST=$(pyenv install --list | sed 's/^  //' | grep --invert-match '\(-\|a\|b\dev\|rc\|miniforge\)' | tail -1)
 
   echo "Installing Python Latest"
   pyenv install $PYTHON_LATEST
