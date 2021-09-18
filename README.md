@@ -15,8 +15,8 @@ The goal is to automate as much app and dev toolchain setup as possible. Here's 
 
 ```bash
 # Run one of the following bash scripts
-/bin/bash scripts/mac_install_work_arm.sh
-/bin/bash scripts/mac_install_personal_intel.sh
+/bin/bash scripts/mac_install_work.sh
+/bin/bash scripts/mac_install_personal.sh
 
 # Run the following two fish scripts
 /usr/local/bin/fish scripts/symlink.fish
