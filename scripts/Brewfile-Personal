@@ -10,6 +10,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "azure/functions"
+tap "isen-ng/dotnet-sdk-versions"
 
 # Browsers
 cask "microsoft-edge"
@@ -46,13 +47,14 @@ cask "postman"
 cask "typora"
 cask "jetbrains-toolbox"
 cask "iterm2"
-cask "dotnet-sdk"
 cask "docker"
 brew "azure-functions-core-tools@3"
 # Pyenv is misbehaving on M1; disabling for now
 #brew "pyenv"
 brew "rbenv"
 brew "python@3.9"
+cask "dotnet-sdk3-1-400"
+cask "dotnet-sdk5-0-200"
 
 # Shell and Core Shell Utils
 brew "fish"
