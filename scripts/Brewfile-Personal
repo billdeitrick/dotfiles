@@ -19,7 +19,8 @@ cask "firefox"
 # Device support
 cask "logitech-options"
 cask "steermouse"
-cask "displaylink"
+# Install manually; package has issues
+#cask "displaylink"
 
 # General
 brew "mas"
@@ -51,7 +52,6 @@ brew "azure-functions-core-tools@3"
 # Pyenv is misbehaving on M1; disabling for now
 #brew "pyenv"
 brew "rbenv"
-brew "dotnet-sdk"
 brew "python@3.9"
 
 # Shell and Core Shell Utils
