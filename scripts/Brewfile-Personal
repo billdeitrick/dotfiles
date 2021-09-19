@@ -18,7 +18,6 @@ cask "google-chrome"
 cask "firefox"
 
 # Device support
-cask "logitech-options"
 cask "steermouse"
 # Install manually; package has issues
 #cask "displaylink"
