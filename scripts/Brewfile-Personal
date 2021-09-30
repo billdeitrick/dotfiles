@@ -37,6 +37,7 @@ cask "google-backup-and-sync"
 cask "gimp"
 cask "inkscape"
 cask "vagrant"
+cask "discord"
 
 # Dev Tools
 cask "font-hack-nerd-font"
@@ -91,10 +92,10 @@ brew "bzip2"
 mas "Keynote", id: 409183694
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
-mas "Slack", id: 803453959
 
 # Misc
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft OneNote", id: 784801555
 mas "1Password 7 - Password Manager", id: 1333542190
 mas "Kindle", id: 405399194
+mas "Slack", id: 803453959
