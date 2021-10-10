@@ -38,6 +38,7 @@ cask "gimp"
 cask "inkscape"
 cask "vagrant"
 cask "discord"
+cask "netspot"
 
 # Dev Tools
 cask "font-hack-nerd-font"
