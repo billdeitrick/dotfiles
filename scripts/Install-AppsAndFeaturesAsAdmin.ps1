@@ -81,8 +81,10 @@ Write-Host "######### Windows Package Manager Packages Install #########" -Foreg
 
 winget import --accept-package-agreements --accept-source-agreements -i (Join-Path -Path $PSScriptRoot -ChildPath "winget-$(if ($Personal) { "personal" } else { "work" }).json")
 
-Write-Host "######### End Windows Package Manager Packages Install #########" -ForegroundColor Yellow
+# Handle packages that don't install well from JSON file
+winget install --exact --id "9WZDNCRFHVJL" --accept-package-agreements --accept-source-agreements # OneNote for Windows 10
 
+Write-Host "######### End Windows Package Manager Packages Install #########" -ForegroundColor Yellow
 
 #endregion
 

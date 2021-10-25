@@ -79,10 +79,6 @@
 					"PackageIdentifier": "Inkscape.Inkscape"
 				},
 				{
-					"PackageIdentifier": "Microsoft.Teams",
-					"source": "winget"
-				},
-				{
 					"PackageIdentifier": "Zoom.Zoom"
 				},
 				{
