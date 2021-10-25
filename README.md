@@ -35,6 +35,7 @@ Some apps on Windows aren't installed automatically for various reasons (broken 
 
 Here are the steps to stand up a new Windows machine:
 
+1. Install latest patches
 1. Install password manager
 1. Download dotfiles repo from github. Drop anywhere, extract, and run from admin PowerShell: `.\scripts\Install-AppsAndFeaturesAsAdmin.ps1` (add `-Personal` switch if this is a personal machine)
 1. Clone the dotfiles repo into %UserProfile%\dev
