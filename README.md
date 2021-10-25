@@ -31,15 +31,14 @@ Before running setup scripts, perform the following:
 
 ### Set Up Windows
 
-Some apps on Windows can't be installed via Chocolatey; they come from the Windows store, other less easily accessible sources, etc. Here is a list of manual setup to be performed:
+Some apps on Windows aren't installed automatically for various reasons (broken packages, desire to actually use installers or other means, etc. Those are listed below).
+
+Here are the steps to stand up a new Windows machine:
 
 1. Install password manager
-1. Enable HyperV (`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All`)
-1. Install MS Office if applicable
-1. Install Windows terminal from windows store
-1. Download dotfiles repo from github. Drop anywhere, extract, and run from admin PowerShell: `.\scripts\windows_install.ps1`
+1. Download dotfiles repo from github. Drop anywhere, extract, and run from admin PowerShell: `.\scripts\Install-AppsAndFeaturesAsAdmin.ps1` (add `-Personal` switch if this is a personal machine)
 1. Clone the dotfiles repo into %UserProfile%\dev
-1. CD into $UserProfile%\dev and run `.\scripts\windows_user_setup.ps1` and `.\scripts\symlink.ps1`
+1. CD into $UserProfile%\dev\dotfiles and run `.\scripts\Install-ResourcesAsUser.ps1` and `.\scripts\symlink.ps1`
 
 Follow Microsoft [instructions for installing WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
