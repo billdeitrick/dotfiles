@@ -3,3 +3,6 @@
 
 # Ignore DS Store
 .DS_Store
+
+# Ignore .plugin files
+com.bemaservices*/**/*.plugin
