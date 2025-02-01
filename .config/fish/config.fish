@@ -34,6 +34,12 @@ switch (uname)
             set -gx PATH "/Users/$LOGNAME/.local/bin" $PATH
         end
 
+        # Set x86_65 brew alias if available
+        arch -x86_64 /usr/local/bin/brew --version > /dev/null 2>&1
+        if test $status -eq 0
+            alias brew86="arch -x86_64 /usr/local/bin/brew"
+        end
+
         # Setup pyenv for MacOS if it is available
         which pyenv > /dev/null 2>&1
         if test $status -eq 0
