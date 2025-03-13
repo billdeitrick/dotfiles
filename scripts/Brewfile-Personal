@@ -33,6 +33,9 @@ cask "inkscape"
 cask "vagrant"
 cask "discord"
 cask "netspot"
+cask "zoom"
+cask "displaylink"
+cask "tailscale"
 
 # Dev Tools
 cask "font-hack-nerd-font"
