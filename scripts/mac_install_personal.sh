@@ -144,11 +144,12 @@ fi
 #   echo "Python install with Pyenv already complete."
 # fi
 
-echo "######### Install Python tooling via Pipx #########"
-pip3 install -U pipx
-pipx install pipenv
-pipx install flake8
-pipx install pytest
+# Broken currently
+# echo "######### Install Python tooling via Pipx #########"
+# pip3 install -U pipx
+# pipx install pipenv
+# pipx install flake8
+# pipx install pytest
 
 ################################################################
 # Pause                                                        #
