@@ -36,6 +36,8 @@ cask "netspot"
 cask "zoom"
 cask "displaylink"
 cask "tailscale"
+cask "vnc-viewer"
+cask "ollama"
 
 # Dev Tools
 cask "font-hack-nerd-font"
