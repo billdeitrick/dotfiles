@@ -77,7 +77,7 @@ fi
 ################################################################
 
 echo "######### Installing Apps from Brewfile #########"
-brew bundle install --file ~/Documents/dev/dotfiles/scripts/Brewfile-Personal --no-lock
+brew bundle install --file ~/Documents/dev/dotfiles/scripts/Brewfile-Personal
 
 ################################################################
 # Pause                                                        #
@@ -163,20 +163,21 @@ fi
 # Ruby                                                         #
 ################################################################
 
-echo "######### Install Ruby via rbenv #########"
-# If we've only got one Ruby version installed (system), install latest
-if [ "$(rbenv versions | wc -l | xargs)" == "1" ]; then
-# Set a var with the latest stable Ruby version available from rbenv
-  RUBY_LATEST=$(rbenv install -L | grep '^[0-9]\.[0-9]\.[0-9]$' | tail -1)
+# DISABLED ~> Not working with Ruby right now
+# echo "######### Install Ruby via rbenv #########"
+# # If we've only got one Ruby version installed (system), install latest
+# if [ "$(rbenv versions | wc -l | xargs)" == "1" ]; then
+# # Set a var with the latest stable Ruby version available from rbenv
+#   RUBY_LATEST=$(rbenv install -L | grep '^[0-9]\.[0-9]\.[0-9]$' | tail -1)
 
-  # Get the latest stable Ruby version from rbenv
-  rbenv install $RUBY_LATEST
+#   # Get the latest stable Ruby version from rbenv
+#   rbenv install $RUBY_LATEST
 
-  # Tell rbenv what our default Ruby will be
-  rbenv global $RUBY_LATEST
-else
-  echo "Ruby install with rbenv already complete."
-fi
+#   # Tell rbenv what our default Ruby will be
+#   rbenv global $RUBY_LATEST
+# else
+#   echo "Ruby install with rbenv already complete."
+# fi
 
 ################################################################
 # Pause                                                        #
@@ -235,14 +236,6 @@ if mas list | grep 682658836 > /dev/null; then
   sudo rm -rf /Library/Audio/Apple\ Loops/
 else
   echo "GarageBand not found."
-fi
-
-# Remove iMovie if it's installed
-if mas list | grep 408981434 > /dev/null; then
-  echo "Removing iMovie."
-  sudo rm -rf /Applications/iMovie.app/
-else
-  echo "iMovie not found."
 fi
 
 ################################################################

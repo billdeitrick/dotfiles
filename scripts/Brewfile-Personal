@@ -3,13 +3,6 @@
 ################################################################
 
 # Taps
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "azure/functions"
 tap "isen-ng/dotnet-sdk-versions"
 
 # Browsers
@@ -31,7 +24,8 @@ cask "airtool"
 brew "wireshark"
 brew "nmap"
 brew "mtr"
-cask "osxfuse"
+# Fails in Sequoia on Apple Silicon; disable for now
+# cask "osxfuse"
 cask "cryptomator"
 cask "google-drive"
 cask "gimp"
@@ -49,10 +43,10 @@ cask "typora"
 cask "jetbrains-toolbox"
 cask "iterm2"
 cask "docker"
-brew "azure-functions-core-tools@3"
 # Pyenv is misbehaving on M1; disabling for now
 #brew "pyenv"
-brew "rbenv"
+# Not working with Ruby much right now
+#brew "rbenv"
 brew "python@3.9"
 cask "dotnet-sdk3-1-400"
 cask "dotnet-sdk5-0-200"
