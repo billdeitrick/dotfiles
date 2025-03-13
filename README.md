@@ -23,8 +23,8 @@ Before running setup scripts, perform the following:
 /bin/bash scripts/mac_install_personal.sh
 
 # Run the following two fish scripts
-/usr/local/bin/fish scripts/symlink.fish
-/usr/local/bin/fish scripts/fish-bootstrap.fish
+/opt/homebrew/bin/fish scripts/symlink.fish
+/opt/homebrew/bin/fish scripts/fish-bootstrap.fish
 ```
 
 ### Windows
