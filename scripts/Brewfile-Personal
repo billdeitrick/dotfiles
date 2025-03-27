@@ -12,8 +12,8 @@ cask "firefox"
 
 # Device support
 cask "steermouse"
-# Install manually; package has issues
-#cask "displaylink"
+cask "displaylink"
+cask "bazecor"
 
 # General
 brew "mas"
@@ -34,7 +34,6 @@ cask "vagrant"
 cask "discord"
 cask "netspot"
 cask "zoom"
-cask "displaylink"
 cask "tailscale"
 cask "vnc-viewer"
 cask "ollama"
@@ -49,10 +48,11 @@ cask "jetbrains-toolbox"
 cask "iterm2"
 cask "docker"
 # Pyenv is misbehaving on M1; disabling for now
-#brew "pyenv"
+brew "pyenv"
+brew "pipx"
+brew "freetds"
 # Not working with Ruby much right now
 #brew "rbenv"
-brew "python@3.9"
 cask "dotnet-sdk3-1-400"
 cask "dotnet-sdk5-0-200"
 
