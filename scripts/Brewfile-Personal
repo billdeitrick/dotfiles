@@ -53,8 +53,7 @@ brew "pipx"
 brew "freetds"
 # Not working with Ruby much right now
 #brew "rbenv"
-cask "dotnet-sdk3-1-400"
-cask "dotnet-sdk5-0-200"
+cask "dotnet-sdk"
 
 # Shell and Core Shell Utils
 brew "fish"
