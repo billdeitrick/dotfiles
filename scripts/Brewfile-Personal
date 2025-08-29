@@ -37,6 +37,7 @@ cask "zoom"
 cask "tailscale"
 cask "vnc-viewer"
 cask "ollama"
+cask "balenaetcher"
 
 # Dev Tools
 cask "font-hack-nerd-font"
@@ -98,3 +99,4 @@ mas "Microsoft OneNote", id: 784801555
 mas "Amazon Kindle", id: 302584613
 mas "Slack", id: 803453959
 mas "Goodnotes 6", id: 1444383602
+mas "WhatsApp Messenger", id: 310633997
