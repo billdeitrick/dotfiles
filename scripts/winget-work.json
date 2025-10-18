@@ -34,10 +34,10 @@
 					"PackageIdentifier": "Insecure.Nmap"
 				},
 				{
-					"PackageIdentifier": "Python.Python.3"
+					"PackageIdentifier": "Python.Python.3.14"
 				},
 				{
-					"PackageIdentifier": "Telerik.Fiddler"
+					"PackageIdentifier": "Telerik.Fiddler.Classic"
 				},
 				{
 					"PackageIdentifier": "WinSCP.WinSCP"
@@ -49,10 +49,10 @@
 					"PackageIdentifier": "PuTTY.PuTTY"
 				},
 				{
-					"PackageIdentifier": "Adobe.AdobeAcrobatReaderDC"
+					"PackageIdentifier": "Adobe.Acrobat.Reader.64-bit"
 				},
 				{
-					"PackageIdentifier": "Microsoft.AzureStorageExplorer"
+					"PackageIdentifier": "Microsoft.Azure.StorageExplorer"
 				},
 				{
 					"PackageIdentifier": "SlackTechnologies.Slack"
@@ -67,7 +67,7 @@
 					"PackageIdentifier": "SourceFoundry.HackFonts"
 				},
 				{
-					"PackageIdentifier": "GIMP.GIMP"
+					"PackageIdentifier": "GIMP.GIMP.3"
 				},
 				{
 					"PackageIdentifier": "Inkscape.Inkscape"
