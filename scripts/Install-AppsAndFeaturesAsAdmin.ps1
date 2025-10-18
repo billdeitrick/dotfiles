@@ -26,55 +26,6 @@ param (
     $Personal
 )
 
-#region Install Windows Features
-
-Write-Host "######### Install Windows Features #########" -ForegroundColor Yellow
-
-Write-Host "Checking Hyper-V Status" -ForegroundColor Magenta
-
-if ((Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V).State -ne [Microsoft.Dism.Commands.FeatureState]::Enabled) {
-    Write-Host "Enabling Hyper-V" -ForegroundColor Magenta
-    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
-    Write-Host "Finished enabling Hyper-V" -ForegroundColor Magenta
-} else {
-    Write-Host "Hyper-V is enabled." -ForegroundColor Green
-}
-
-Write-Host "######### End Install Windows Features #########" -ForegroundColor Yellow
-
-#endregion
-
-#region Install Chocolatey
-
-Write-Host "######### Install Chocolatey #########" -ForegroundColor Yellow
-
-if ($null -eq $(Get-Command -Name choco -ErrorAction SilentlyContinue)) {
-    Write-Host "Installing Chocolatey." -ForegroundColor Magenta
-
-    Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
-    # Choco features
-    choco feature enable -n=useRememberedArgumentsForUpgrades
-
-    Write-Host "Completed installing Chocolatey." -ForegroundColor Magenta
-} else {
-    Write-Host "Chocolatey already installed." -ForegroundColor Green
-}
-
-Write-Host "######### End Install Chocolatey #########" -ForegroundColor Yellow
-
-#endregion
-
-#region Chocolatey Packages Install
-
-Write-Host "######### Chocolatey Packages Install #########" -ForegroundColor Yellow
-
-choco install -y (Join-Path -Path $PSScriptRoot -ChildPath "packages-$(if ($Personal) { "personal" } else { "work" }).config")
-
-Write-Host "######### End Chocolatey Packages Install #########" -ForegroundColor Yellow
-
-#endregion
-
 #region Windows Package Manager Packages Install
 
 Write-Host "######### Windows Package Manager Packages Install #########" -ForegroundColor Yellow

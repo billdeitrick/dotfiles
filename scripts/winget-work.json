@@ -7,9 +7,6 @@
 			"Packages" : 
 			[
 				{
-					"PackageIdentifier" : "Microsoft.WindowsTerminal"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
@@ -26,9 +23,6 @@
 				},
 				{
 					"PackageIdentifier": "JetBrains.Toolbox"
-				},
-				{
-					"PackageIdentifier": "Notepad++.Notepad++"
 				},
 				{
 					"PackageIdentifier": "7zip.7zip"
@@ -82,10 +76,19 @@
 					"PackageIdentifier": "Zoom.Zoom"
 				},
 				{
-					"PackageIdentifier": "Microsoft.Office"
+					"PackageIdentifier": "Microsoft.Azure.AZCopy.10"
 				},
 				{
-					"PackageIdentifier": "Microsoft.VisualStudio.2019.Enterprise"
+					"PackageIdentifier": "MHNexus.HxD"
+				},
+				{
+					"PackageIdentifier": "TechSmith.Snagit.2025"
+				},
+				{
+					"PackageIdentifier": "Microsoft.AzureCLI"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudio.2022.Enterprise"
 				}
 			],
 			"SourceDetails" : 

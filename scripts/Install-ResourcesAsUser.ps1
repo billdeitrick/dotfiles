@@ -12,19 +12,6 @@ $pythonVerPath = $($(python --version).Replace('.', '').Replace(' ', '').Substri
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";" + $env:AppData + "\Python\$pythonVerPath\Scripts", [System.EnvironmentVariableTarget]::User)
 
 ################################################################
-# Install Python Stuff                                         #
-################################################################
-
-Write-Host "######### Install Python Stuff #########"
-
-pip install --user pipx
-pipx ensurepath 
-
-pipx install pipenv
-pipx install cookiecutter
-pipx install cruft
-
-################################################################
 # Install Powershell Modules                                   #
 ################################################################
 
