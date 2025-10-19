@@ -3,7 +3,6 @@
   "blocks": [
     {
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
           "background": "#fbfbfb",
@@ -63,12 +62,6 @@
           "style": "powerline",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }}{{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf0c7 {{ .StashCount }}{{ end }}",
           "type": "git"
-        },
-        {
-          "foreground": "#FFD54F",
-          "style": "plain",
-          "template": " {{if .Root}}#{{else}}${{end}}",
-          "type": "text"
         }
       ],
       "type": "prompt"
@@ -106,7 +99,21 @@
           "type": "time"
         }
       ],
-      "type": "rprompt"
+      "alignment": "right",
+      "type": "prompt"
+    },
+    {
+      "segments": [
+        {
+          "foreground": "#FFD54F",
+          "style": "plain",
+          "template": "{{if .Root}}#{{else}}${{end}}",
+          "type": "text"
+        }
+      ],
+      "newline": true,
+      "alignment": "left",
+      "type": "prompt"
     }
   ],
   "console_title_template": "{{.UserName}}@{{.HostName}} : {{.Folder}}",
