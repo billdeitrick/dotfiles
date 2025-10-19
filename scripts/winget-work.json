@@ -1,104 +1,191 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2021-10-23T16:29:20.427-00:00",
+	"CreationDate" : "2025-10-19T14:50:34.766-00:00",
 	"Sources" : 
 	[
 		{
 			"Packages" : 
 			[
 				{
-					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+					"PackageIdentifier" : "7zip.7zip"
+				},
+				{
+					"PackageIdentifier" : "Google.AndroidStudio"
 				},
 				{
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
+					"PackageIdentifier" : "SourceFoundry.HackFonts"
+				},
+				{
+					"PackageIdentifier" : "MHNexus.HxD"
+				},
+				{
+					"PackageIdentifier" : "Mozilla.Firefox"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Office"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.msodbcsql.17"
+				},
+				{
+					"PackageIdentifier" : "Twingate.Client"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.AzureCLI"
+				},
+				{
+					"PackageIdentifier" : "RoyalApps.RoyalTS.7"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DebugDiag"
+				},
+				{
+					"PackageIdentifier" : "Adobe.Acrobat.Reader.64-bit"
+				},
+				{
+					"PackageIdentifier" : "TechSmith.Snagit.2025"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell"
+				},
+				{
+					"PackageIdentifier" : "Inkscape.Inkscape"
+				},
+				{
+					"PackageIdentifier" : "Zoom.Zoom"
+				},
+				{
+					"PackageIdentifier" : "PuTTY.PuTTY"
+				},
+				{
+					"PackageIdentifier" : "Google.Chrome"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge"
+				},
+				{
+					"PackageIdentifier" : "WiresharkFoundation.Wireshark"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.SQLServerManagementStudio.21"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Enterprise"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.Runtime.8"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
+				},
+				{
+					"PackageIdentifier" : "Python.Launcher"
+				},
+				{
+					"PackageIdentifier" : "RocketChat.RocketChat"
+				},
+				{
+					"PackageIdentifier" : "DevToys-app.DevToys"
+				},
+				{
+					"PackageIdentifier" : "Discord.Discord"
+				},
+				{
+					"PackageIdentifier" : "Telerik.Fiddler.Classic"
+				},
+				{
+					"PackageIdentifier" : "GIMP.GIMP.3"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Azure.AZCopy.10"
+				},
+				{
 					"PackageIdentifier" : "Postman.Postman"
 				},
 				{
-					"PackageIdentifier": "Canonical.Ubuntu"
+					"PackageIdentifier" : "JetBrains.Toolbox"
 				},
 				{
-					"PackageIdentifier": "Microsoft.SQLServerManagementStudio"
+					"PackageIdentifier" : "DygmaLabs.Bazecor"
 				},
 				{
-					"PackageIdentifier": "JetBrains.Toolbox"
+					"PackageIdentifier" : "SlackTechnologies.Slack"
 				},
 				{
-					"PackageIdentifier": "7zip.7zip"
+					"PackageIdentifier" : "WinSCP.WinSCP"
 				},
 				{
-					"PackageIdentifier": "Mozilla.Firefox"
+					"PackageIdentifier" : "Espanso.Espanso"
 				},
 				{
-					"PackageIdentifier": "Insecure.Nmap"
+					"PackageIdentifier" : "Microsoft.PowerToys"
 				},
 				{
-					"PackageIdentifier": "Python.Python.3.14"
+					"PackageIdentifier" : "Microsoft.Azure.StorageExplorer"
 				},
 				{
-					"PackageIdentifier": "Telerik.Fiddler.Classic"
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier": "WinSCP.WinSCP"
+					"PackageIdentifier" : "Python.Python.3.14"
 				},
 				{
-					"PackageIdentifier": "WiresharkFoundation.Wireshark"
+					"PackageIdentifier" : "AgileBits.1Password"
 				},
 				{
-					"PackageIdentifier": "PuTTY.PuTTY"
+					"PackageIdentifier" : "Canonical.Ubuntu"
 				},
 				{
-					"PackageIdentifier": "Adobe.Acrobat.Reader.64-bit"
+					"PackageIdentifier" : "Microsoft.Teams"
 				},
 				{
-					"PackageIdentifier": "Microsoft.Azure.StorageExplorer"
+					"PackageIdentifier" : "Microsoft.AppInstaller"
 				},
 				{
-					"PackageIdentifier": "SlackTechnologies.Slack"
+					"PackageIdentifier" : "Microsoft.UI.Xaml.2.7"
 				},
 				{
-					"PackageIdentifier": "Google.Chrome"
+					"PackageIdentifier" : "Microsoft.UI.Xaml.2.8"
 				},
 				{
-					"PackageIdentifier": "Microsoft.PowerShell"
+					"PackageIdentifier" : "Microsoft.VCLibs.Desktop.14"
 				},
 				{
-					"PackageIdentifier": "SourceFoundry.HackFonts"
+					"PackageIdentifier" : "Microsoft.WinDbg"
 				},
 				{
-					"PackageIdentifier": "GIMP.GIMP.3"
+					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				},
 				{
-					"PackageIdentifier": "Inkscape.Inkscape"
+					"PackageIdentifier" : "Microsoft.WindowsApp"
 				},
 				{
-					"PackageIdentifier": "Zoom.Zoom"
+					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
 				},
 				{
-					"PackageIdentifier": "Microsoft.Azure.AZCopy.10"
-				},
-				{
-					"PackageIdentifier": "MHNexus.HxD"
-				},
-				{
-					"PackageIdentifier": "TechSmith.Snagit.2025"
-				},
-				{
-					"PackageIdentifier": "Microsoft.AzureCLI"
-				},
-				{
-					"PackageIdentifier": "Microsoft.VisualStudio.2022.Enterprise"
+					"PackageIdentifier" : "Microsoft.Edit"
 				}
 			],
 			"SourceDetails" : 
 			{
-				"Argument" : "https://winget.azureedge.net/cache",
+				"Argument" : "https://cdn.winget.microsoft.com/cache",
 				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
 				"Name" : "winget",
 				"Type" : "Microsoft.PreIndexed.Package"
 			}
 		}
 	],
-	"WinGetVersion" : "1.1.12653"
+	"WinGetVersion" : "1.11.510"
 }
