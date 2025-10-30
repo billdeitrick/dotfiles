@@ -16,22 +16,10 @@
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
-					"PackageIdentifier" : "SourceFoundry.HackFonts"
-				},
-				{
 					"PackageIdentifier" : "MHNexus.HxD"
 				},
 				{
 					"PackageIdentifier" : "Mozilla.Firefox"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Office"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.OneDrive"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.msodbcsql.17"
 				},
 				{
 					"PackageIdentifier" : "Twingate.Client"
@@ -77,21 +65,6 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Enterprise"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.Runtime.8"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
-				},
-				{
-					"PackageIdentifier" : "Python.Launcher"
 				},
 				{
 					"PackageIdentifier" : "RocketChat.RocketChat"
@@ -142,25 +115,7 @@
 					"PackageIdentifier" : "Python.Python.3.14"
 				},
 				{
-					"PackageIdentifier" : "AgileBits.1Password"
-				},
-				{
 					"PackageIdentifier" : "Canonical.Ubuntu"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Teams"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.AppInstaller"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.7"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.8"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCLibs.Desktop.14"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WinDbg"
