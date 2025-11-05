@@ -131,6 +131,9 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Edit"
+				},
+				{
+					"PackageIdentifier": "Logitech.LogiTune"
 				}
 			],
 			"SourceDetails" : 
