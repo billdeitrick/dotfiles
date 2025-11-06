@@ -134,6 +134,9 @@
 				},
 				{
 					"PackageIdentifier": "Logitech.LogiTune"
+				},
+				{
+					"PackageIdentifier": "Porrey.VirtualZPLPrinter"
 				}
 			],
 			"SourceDetails" : 
