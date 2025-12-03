@@ -61,7 +61,7 @@
 					"PackageIdentifier" : "WiresharkFoundation.Wireshark"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.SQLServerManagementStudio.21"
+					"PackageIdentifier" : "Microsoft.SQLServerManagementStudio.22"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Enterprise"
@@ -137,6 +137,9 @@
 				},
 				{
 					"PackageIdentifier": "Porrey.VirtualZPLPrinter"
+				},
+				{
+					"PackageIdentifier": "DenoLand.Deno"
 				}
 			],
 			"SourceDetails" : 
