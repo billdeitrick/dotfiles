@@ -140,6 +140,9 @@
 				},
 				{
 					"PackageIdentifier": "DenoLand.Deno"
+				},
+				{
+					"PackageIdentifier": "Microsoft.PowerBI"
 				}
 			],
 			"SourceDetails" : 
