@@ -38,6 +38,7 @@ cask "tailscale"
 cask "vnc-viewer"
 cask "ollama"
 cask "balenaetcher"
+cask "spotify"
 
 # Dev Tools
 cask "font-hack-nerd-font"
