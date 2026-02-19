@@ -40,6 +40,12 @@ switch (uname)
             alias brew86="arch -x86_64 /usr/local/bin/brew"
         end
 
+        # Setup nvm for MacOS if it is available
+        which nvm > /dev/null 2>&1
+        if test $status -eq 0
+            bass source ~/.nvm/nvm.sh --no-use
+        end
+
         # Setup pyenv for MacOS if it is available
         which pyenv > /dev/null 2>&1
         if test $status -eq 0
