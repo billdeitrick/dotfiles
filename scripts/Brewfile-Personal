@@ -39,6 +39,7 @@ cask "vnc-viewer"
 cask "ollama"
 cask "balenaetcher"
 cask "spotify"
+cask "affinity"
 
 # Dev Tools
 cask "font-hack-nerd-font"
@@ -56,6 +57,8 @@ brew "freetds"
 # Not working with Ruby much right now
 #brew "rbenv"
 cask "dotnet-sdk"
+brew "azure-cli"
+brew "gh"
 
 # Shell and Core Shell Utils
 brew "fish"
